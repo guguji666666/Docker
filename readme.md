@@ -99,3 +99,68 @@ sudo docker run hello-world
 * [Heimdall dockerhub](https://hub.docker.com/r/linuxserver/heimdall)
 * [Install Heimdall step by step guidance](https://wiki.opensourceisawesome.com/books/self-hosted-dashboards/page/install-heimdall-a-beaiful-shortcut-and-informational-dashboard)
 
+Create a directory for Heimdall
+```sh
+mkdir heimdall
+```
+
+Then navigate to the new directory
+```sh
+cd heimdall
+```
+
+Then we need to create a file called "docker-compose.yml"
+```sh
+nano docker-compose.yml
+```
+
+We need to paste the following into the file we've just opened
+```yml
+version: "2.1"
+services:
+  heimdall:
+    image: lscr.io/linuxserver/heimdall
+    container_name: heimdall
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Chicago
+    volumes:
+      - /home/<your-user>/heimdall/config:/config
+    ports:
+      - 8080:80
+    restart: unless-stopped
+```
+
+We may need to change a couple of things in the file you just pasted.
+
+###### Change the TZ (timezone) if needed, to be the correct timezone for your location.
+###### Change the PUID and PGID to be your user's group and user IDs. You can find them in the terminal by typing the command `id`
+
+In my lab
+```sh
+id
+```
+![image](https://user-images.githubusercontent.com/96930989/227763983-6e2fdabc-f243-447d-860e-a166e5c3ba30.png)
+
+###### On the left side of the colon ":" in the volume section, make sure to set the path to where you have created the "heimdall" folder above.
+
+###### On the left side of the colon ":" in the ports section, make sure to set a port that is not in use on your host.  If 8080 is free, then just use it.
+
+So in my lab, the yaml file would be
+```yml
+version: "2.1"
+services:
+  heimdall:
+    image: lscr.io/linuxserver/heimdall
+    container_name: heimdall
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=China/Shanghai
+    volumes:
+      - /home/gjs/heimdall/config:/config
+    ports:
+      - 8080:80
+    restart: unless-stopped
+```
