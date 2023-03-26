@@ -180,19 +180,6 @@ services:
     
 ```
 
-```yml
-version: '3'
-services:
-  app:
-    image: 'jc21/nginx-proxy-manager:latest'
-    restart: unless-stopped
-    ports:
-      - '81:81'
-    volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt    
-```
-
 ![image](https://user-images.githubusercontent.com/96930989/227771048-6e7f109e-4354-4250-bacb-6fca7b03f957.png)
 
 Once these steps are done, save the file with `CTRL + O`, then Enter to confirm, and exit the nano editor with `CTRL + X`
@@ -200,9 +187,44 @@ Once these steps are done, save the file with `CTRL + O`, then Enter to confirm,
 docker-compose up -d
 ```
 
-Give it time to download the image, and start the container. Remenber to add inbound rule for the port in defined in the yml file
+Give it time to download the image, and start the container. Remember to add inbound rule for the port in defined in the yml file
 
 ![image](https://user-images.githubusercontent.com/96930989/227764638-202e5941-738d-454b-968c-882b734756e5.png)
 
-When you see "done" in the terminal, wait for 10s, and then navigate to the ip address of the host machine, and the port you set above in the web browser.
+When you see "done" in the terminal, the hemdall is started.
 
+If you have installed `Nginx Proxy Manager`, the yml file of it may be like this
+```yml
+version: '3'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '80:80'
+      - '81:81'
+      - '443:443'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+```
+
+Navigate to `<IP of the host>:81` in the browser, you will see the login page below
+
+![image](https://user-images.githubusercontent.com/96930989/227771882-61e526f2-8145-40b3-8940-3fcf367c93e4.png)
+
+When the Nginx Proxy Manager first starts, log in with the following username and password:
+
+Default Proxy Manager username: 
+```
+admin@example.com
+```
+
+Default Proxy Manager password: 
+```
+changeme
+```
+
+Once sign in, you can modify the information here
+
+![image](https://user-images.githubusercontent.com/96930989/227771973-4e327ca0-8c46-47a4-ac0b-2e1dee7bbeeb.png)
