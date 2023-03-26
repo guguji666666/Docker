@@ -54,5 +54,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```sh
 sudo docker run hello-world
 ```
+![image](https://user-images.githubusercontent.com/96930989/227760708-cf7ccf34-61fa-483a-a6ba-c049c3864f32.png)
 
 ### 2. [Useful components on docker](https://www.youtube.com/watch?v=pBwIm6m6x7M)
