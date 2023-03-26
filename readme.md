@@ -1,10 +1,22 @@
 ### 1. [How to Install Docker on Ubuntu 22 04 LTS](https://www.youtube.com/watch?v=wCSMDtHPBso)
 
 ##### Update your system's package index and ensure that all packages installed on your system are up-to-date:
+
+Check current system time
+```sh
+date
+```
+
+Modify system time
+```sh
+dpkg-reconfigure tzdata
+```
+
 ```sh
 sudo apt-get update
 sudo apt-get upgrade
 ```
+
 ##### Install the dependencies necessary to add Docker’s package repository:
 ```sh
 sudo apt-get install \
