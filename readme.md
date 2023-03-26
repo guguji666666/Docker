@@ -14,6 +14,9 @@ dpkg-reconfigure tzdata
 
 ```sh
 sudo apt-get update
+```
+
+```sh
 sudo apt-get upgrade
 ```
 
