@@ -143,7 +143,7 @@ We may need to change a couple of things in the file you just pasted.
 ###### Change the TZ (timezone) if needed, to be the correct timezone for your location.
 ###### Change the PUID and PGID to be your user's group and user IDs. You can find them in the terminal by typing the command `id`
 
-In my lab
+###### In my lab
 ```sh
 id
 ```
@@ -153,7 +153,7 @@ id
 
 ###### On the left side of the colon ":" in the ports section, make sure to set a port that is not in use on your host.  If 8080 is free, then just use it.
 
-So in my lab, the yaml file would be
+###### So in my lab, the yml file would be
 ```yml
 version: "2.1"
 services:
@@ -170,3 +170,4 @@ services:
       - 8080:80
     restart: unless-stopped
 ```
+![image](https://user-images.githubusercontent.com/96930989/227764426-76b30534-f63e-4559-a63e-b8373ebf3aff.png)
