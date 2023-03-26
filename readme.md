@@ -177,6 +177,20 @@ services:
     ports:
       - 8280:80
     restart: unless-stopped
+    
+```
+
+```yml
+version: '3'
+services:
+  app:
+    image: 'jc21/nginx-proxy-manager:latest'
+    restart: unless-stopped
+    ports:
+      - '81:81'
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt    
 ```
 
 ![image](https://user-images.githubusercontent.com/96930989/227771048-6e7f109e-4354-4250-bacb-6fca7b03f957.png)
