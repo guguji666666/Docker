@@ -22,7 +22,7 @@ Navigate to `<IP of the host>:81` in the browser, you will see the login page be
 
 When the Nginx Proxy Manager first starts, log in with the following username and password:
 
-Default Proxy Manager username: 
+[Default Proxy Manager username](https://nginxproxymanager.com/setup/#default-administrator-user): 
 ```
 admin@example.com
 ```
@@ -31,6 +31,8 @@ Default Proxy Manager password:
 ```
 changeme
 ```
+![image](https://user-images.githubusercontent.com/96930989/227784662-49396ef1-0092-4a6c-9cd3-177022e58eb9.png)
+
 
 Once sign in, you can modify the username and password here
 
