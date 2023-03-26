@@ -59,4 +59,8 @@ sudo docker run hello-world
 ![image](https://user-images.githubusercontent.com/96930989/227760708-cf7ccf34-61fa-483a-a6ba-c049c3864f32.png)
 
 ### 2. [Useful components on docker](https://www.youtube.com/watch?v=pBwIm6m6x7M)
-##### [Heimdall - an amazingly clean, user-friendly Shortcut and Informational Dashboard!](https://www.youtube.com/watch?v=qFqUXN0jxMQ)
+##### 1. [Heimdall - an amazingly clean, user-friendly Shortcut and Informational Dashboard!](https://www.youtube.com/watch?v=qFqUXN0jxMQ)
+###### [Install Heimdall, a beaiful shortcut and informational dashboard](https://wiki.opensourceisawesome.com/books/self-hosted-dashboards/page/install-heimdall-a-beaiful-shortcut-and-informational-dashboard)
+###### [Heimdall site](https://heimdall.site/)
+###### [Heimdall dockerhub](https://hub.docker.com/r/linuxserver/heimdall)
+
