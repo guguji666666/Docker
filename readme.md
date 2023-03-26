@@ -104,7 +104,13 @@ sudo docker run hello-world
 Create a directory for Heimdall
 ```sh
 sudo su root
+```
+
+```sh
 cd ~
+```
+
+```sh
 cd docker
 ```
 
@@ -167,7 +173,7 @@ services:
       - PGID=0
       - TZ=China/Shanghai
     volumes:
-      - /home/gjs/heimdall/config:/config
+      - /gjsheimdall/config:/config
     ports:
       - 8280:80
       - 443:443
