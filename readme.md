@@ -80,6 +80,8 @@ Next, you'll be asked if you want to install Docker, Docker-CE, NGinX Proxy Mana
 
 Feel free to install them all, or just Docker and Docker-Compose. 
 
+![image](https://user-images.githubusercontent.com/96930989/227765914-11eb09c6-46c0-4962-bfb3-f45b1a944465.png)
+
 The steps above are from [Install Heimdall, a beaiful shortcut and informational dashboard](https://wiki.opensourceisawesome.com/books/self-hosted-dashboards/page/install-heimdall-a-beaiful-shortcut-and-informational-dashboard)
 
 ##### Verify that Docker is installed correctly by running the hello-world image:
@@ -167,10 +169,12 @@ services:
     volumes:
       - /home/gjs/heimdall/config:/config
     ports:
-      - 8080:80
+      - 8280:80
+      - 443:443
     restart: unless-stopped
 ```
-![image](https://user-images.githubusercontent.com/96930989/227764426-76b30534-f63e-4559-a63e-b8373ebf3aff.png)
+
+![image](https://user-images.githubusercontent.com/96930989/227764994-d75dd35c-a510-4a65-9c84-5eb60234ffce.png)
 
 Once these steps are done, save the file with `CTRL + O`, then Enter to confirm, and exit the nano editor with `CTRL + X`
 ```sh
