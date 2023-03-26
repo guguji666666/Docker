@@ -58,6 +58,10 @@ sudo docker run hello-world
 ##### That’s it! You now have Docker installed on your Ubuntu 22.04 system.
 ![image](https://user-images.githubusercontent.com/96930989/227760708-cf7ccf34-61fa-483a-a6ba-c049c3864f32.png)
 
+##### [Install Docker](https://docs.docker.com/get-docker/)
+##### [Install Docker Compose](https://docs.docker.com/compose/install/)
+
+
 
 ## You can also install `Docker` and `Docker-Compose` following the steps below
 ##### Pull down the installtion script to your local machine, this will download a script called "install_docker_nproxyman.sh" to your current directory.
