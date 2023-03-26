@@ -176,11 +176,10 @@ services:
       - /gjsheimdall/config:/config
     ports:
       - 8280:80
-      - 443:443
     restart: unless-stopped
 ```
 
-![image](https://user-images.githubusercontent.com/96930989/227764994-d75dd35c-a510-4a65-9c84-5eb60234ffce.png)
+![image](https://user-images.githubusercontent.com/96930989/227771048-6e7f109e-4354-4250-bacb-6fca7b03f957.png)
 
 Once these steps are done, save the file with `CTRL + O`, then Enter to confirm, and exit the nano editor with `CTRL + X`
 ```sh
