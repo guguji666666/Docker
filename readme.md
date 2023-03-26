@@ -60,7 +60,8 @@ sudo docker run hello-world
 
 ### 2. [Useful components on docker](https://www.youtube.com/watch?v=pBwIm6m6x7M)
 ##### 1. [Heimdall - an amazingly clean, user-friendly Shortcut and Informational Dashboard!](https://www.youtube.com/watch?v=qFqUXN0jxMQ)
-###### [Install Heimdall, a beaiful shortcut and informational dashboard](https://wiki.opensourceisawesome.com/books/self-hosted-dashboards/page/install-heimdall-a-beaiful-shortcut-and-informational-dashboard)
+###### [Heimdall official github](https://github.com/linuxserver/Heimdall)
 ###### [Heimdall site](https://heimdall.site/)
 ###### [Heimdall dockerhub](https://hub.docker.com/r/linuxserver/heimdall)
+###### [Install Heimdall step by step guidance](https://wiki.opensourceisawesome.com/books/self-hosted-dashboards/page/install-heimdall-a-beaiful-shortcut-and-informational-dashboard)
 
