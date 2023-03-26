@@ -102,7 +102,8 @@ sudo docker run hello-world
 Create a directory for Heimdall
 ```sh
 sudo su root
-cd /docker
+cd ~
+cd docker
 ```
 
 ```sh
