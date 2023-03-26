@@ -225,6 +225,6 @@ Default Proxy Manager password:
 changeme
 ```
 
-Once sign in, you can modify the information here
+Once sign in, you can modify the username and password here
 
 ![image](https://user-images.githubusercontent.com/96930989/227771973-4e327ca0-8c46-47a4-ac0b-2e1dee7bbeeb.png)
