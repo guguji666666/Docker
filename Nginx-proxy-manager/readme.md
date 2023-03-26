@@ -1,4 +1,6 @@
-### [Install Nginx Proxy Manager](https://www.youtube.com/watch?v=Z2zl2TlDzd8)
+### Install Nginx Proxy Manager
+* [Youtube step by step guidance](https://www.youtube.com/watch?v=Z2zl2TlDzd8)
+* [Official full Setup Instructions](https://nginxproxymanager.com/setup/#running-the-app)
 
 If you have installed `Nginx Proxy Manager`, the yml file of it may be like this
 ```yml
