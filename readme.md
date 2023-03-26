@@ -171,3 +171,15 @@ services:
     restart: unless-stopped
 ```
 ![image](https://user-images.githubusercontent.com/96930989/227764426-76b30534-f63e-4559-a63e-b8373ebf3aff.png)
+
+Once these steps are done, save the file with `CTRL + O`, then Enter to confirm, and exit the nano editor with `CTRL + X`
+```sh
+docker-compose up -d
+```
+
+Give it time to download the image, and start the container. Remenber to add inbound rule for the port in defined in the yml file
+
+![image](https://user-images.githubusercontent.com/96930989/227764638-202e5941-738d-454b-968c-882b734756e5.png)
+
+When you see "done" in the terminal, wait for 10s, and then navigate to the ip address of the host machine, and the port you set above in the web browser.
+
