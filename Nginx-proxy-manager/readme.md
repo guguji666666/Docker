@@ -1,4 +1,4 @@
-### [Install `Nginx Proxy Manager`](https://www.youtube.com/watch?v=Z2zl2TlDzd8)
+### [Install Nginx Proxy Manager](https://www.youtube.com/watch?v=Z2zl2TlDzd8)
 
 If you have installed `Nginx Proxy Manager`, the yml file of it may be like this
 ```yml
