@@ -80,7 +80,7 @@ Next, you'll be asked if you want to install Docker, Docker-CE, NGinX Proxy Mana
 
 Feel free to install them all, or just Docker and Docker-Compose. 
 
-From [Install Heimdall, a beaiful shortcut and informational dashboard](https://wiki.opensourceisawesome.com/books/self-hosted-dashboards/page/install-heimdall-a-beaiful-shortcut-and-informational-dashboard)
+The steps above are from [Install Heimdall, a beaiful shortcut and informational dashboard](https://wiki.opensourceisawesome.com/books/self-hosted-dashboards/page/install-heimdall-a-beaiful-shortcut-and-informational-dashboard)
 
 ##### Verify that Docker is installed correctly by running the hello-world image:
 ```sh
