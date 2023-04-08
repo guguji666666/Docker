@@ -174,6 +174,11 @@ docker-compose up -d
 
 Navigate to `<IP of the host>:81` in the browser, you will see the login page below
 
+You can check the IP of the server by running the command
+```sh
+curl ip.sb
+```
+
 ![image](https://user-images.githubusercontent.com/96930989/227771882-61e526f2-8145-40b3-8940-3fcf367c93e4.png)
 
 When the Nginx Proxy Manager first starts, log in with the following username and password:
@@ -193,6 +198,14 @@ changeme
 Once sign in, you can modify the username and password here
 
 ![image](https://user-images.githubusercontent.com/96930989/227771973-4e327ca0-8c46-47a4-ac0b-2e1dee7bbeeb.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230721353-497789dc-fa4b-431a-bbf1-5d1ec9bb4795.png)
+
+Now the Nginx proxy server is running on your machine
+
+
+
+
 ##### Verify that Docker is installed correctly by running the hello-world image:
 ```sh
 sudo docker run hello-world
