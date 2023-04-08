@@ -105,3 +105,11 @@ services:
             - POSTGRES_PORT=5432 # 与上面右边的对应！
             - POSTGRES_HOST=db
 ```
+
+### 4. Start yout Joplin server
+```sh
+cd /root/data/docker_data/joplin
+```
+```sh
+docker-compose up -d  
+```
