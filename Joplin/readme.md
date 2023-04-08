@@ -38,11 +38,24 @@ mkdir -p /root/data/docker_data/joplin
 
 ### 3. Create yaml file for Joplin
 
-```
+```sh
 cd /root/data/docker_data/joplin
+```
+
+Check if ports 5432 and 22300 are used by existing apps/services
+```sh
+lsof -i:5432
+```
+
+```sh
+lsof -i:22300
+```
+
+```sh
 nano docker-compose.yml
 ```
 
+Paste the contect below to yaml file
 ```yml
 # This is a sample docker-compose file that can be used to run Joplin Server
 # along with a PostgreSQL server.
