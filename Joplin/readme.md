@@ -106,10 +106,13 @@ services:
             - POSTGRES_HOST=db
 ```
 
-### 4. Start yout Joplin server
+### 4. Start your Joplin server
 ```sh
 cd /root/data/docker_data/joplin
 ```
 ```sh
 docker-compose up -d  
 ```
+
+### 5. Create entry for Joplin in Nginx proxy server
+
