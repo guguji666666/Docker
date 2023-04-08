@@ -1,7 +1,9 @@
-## [Install Docker on Ubuntu 22.04 LTS](https://www.youtube.com/watch?v=wCSMDtHPBso)
+## Install Docker on Ubuntu 22.04 LTS or Debian
 
-##### Update your system's package index and ensure that all packages installed on your system are up-to-date:
+* [Install Docker](https://docs.docker.com/get-docker/)
+* [Install Docker Compose](https://docs.docker.com/compose/install/)
 
+### 1. Check system time and install common softwares
 Check current system time
 ```sh
 date
@@ -12,81 +14,74 @@ Modify system time
 dpkg-reconfigure tzdata
 ```
 
+Update packages
 ```sh
-sudo apt-get update
+sudo su root
+```
+```sh
+apt update -y
+```
+```sh
+apt install wget curl sudo vim git -y
+```
+
+### 2. Install Docker and Docker-compose
+
+Install Docker
+```sh
+wget -qO- get.docker.com | bash
+```
+
+Check Docker version
+```sh
+docker -v
+```
+![image](https://user-images.githubusercontent.com/96930989/230719938-10a528b8-68cd-4a11-9172-5cbc98d6ff7b.png)
+
+Run docker on startup
+```sh
+systemctl enable docker
+```
+![image](https://user-images.githubusercontent.com/96930989/230719879-554236b9-4705-4695-b234-1be2ea7bfa65.png)
+
+Install Docker-compose
+```sh
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 
 ```sh
-sudo apt-get upgrade
+sudo chmod +x /usr/local/bin/docker-compose
 ```
 
-##### Install the dependencies necessary to add Docker’s package repository:
+Check docker-compose version
 ```sh
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg-agent \
-    software-properties-common
+docker-compose --version
+```
+![image](https://user-images.githubusercontent.com/96930989/230719965-556ed99e-5aef-4f9c-91ee-1854db78d7c2.png)
+
+Modify docker config (Optional)
+```sh
+cat > /etc/docker/daemon.json <<EOF
+{
+    "log-driver": "json-file",
+    "log-opts": {
+        "max-size": "20m",
+        "max-file": "3"
+    },
+    "ipv6": true,
+    "fixed-cidr-v6": "fd00:dead:beef:c0::/80",
+    "experimental":true,
+    "ip6tables":true
+}
+EOF
 ```
 
-##### Add Docker’s official GPG key:
+Restart Docker service
 ```sh
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+systemctl restart docker
 ```
 
-##### Add the Docker repository to the system:
-```sh
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-```
 
-##### Update the package index again to include the new Docker repository:
-```sh
-sudo apt-get update
-```
-
-##### Install Docker Community Edition using the following command:
-```sh
-sudo apt-get install docker-ce docker-ce-cli containerd.io
-```
-
-##### Verify that Docker is installed correctly by running the hello-world image:
-```sh
-sudo docker run hello-world
-```
-
-##### That’s it! You now have Docker installed on your Ubuntu 22.04 system.
-![image](https://user-images.githubusercontent.com/96930989/227760708-cf7ccf34-61fa-483a-a6ba-c049c3864f32.png)
-
-##### [Install Docker](https://docs.docker.com/get-docker/)
-##### [Install Docker Compose](https://docs.docker.com/compose/install/)
-
-
-
-## You can also install `Docker` and `Docker-Compose` following the steps below
-##### Pull down the installtion script to your local machine, this will download a script called "install_docker_nproxyman.sh" to your current directory.
-```sh
-wget https://gitlab.com/bmcgonag/docker_installs/-/raw/main/install_docker_nproxyman.sh
-```
-
-##### Change the permissions on the file to allow it to run with:
-```sh
-chmod +x install_docker_nproxyman.sh
-```
-
-##### Run the installation script
-```sh
-./install_docker_nproxyman.sh
-````
-You'll be prompted to identify your OS/Distro.  If you run an OS based on one of the options, simply select that option.
-
-Next, you'll be asked if you want to install Docker, Docker-CE, NGinX Proxy Manager, and / or Portainer-CE.
-
-Feel free to install them all, or just Docker and Docker-Compose. 
-
-![image](https://user-images.githubusercontent.com/96930989/227765914-11eb09c6-46c0-4962-bfb3-f45b1a944465.png)
-
-The steps above are from [Install Heimdall, a beaiful shortcut and informational dashboard](https://wiki.opensourceisawesome.com/books/self-hosted-dashboards/page/install-heimdall-a-beaiful-shortcut-and-informational-dashboard)
 
 ##### Verify that Docker is installed correctly by running the hello-world image:
 ```sh
