@@ -33,5 +33,12 @@ DNS A record > points "Joplin.abc.com" to the IP of VM that runs Nginx proxy ser
 
 ```sh
 sudo su root
-mkdir /root/data/docker_data/Joplin
+mkdir -p /root/data/docker_data/joplin
+```
+
+### 3. Create yaml file for Joplin
+
+```
+cd /root/data/docker_data/joplin
+nano docker-compose.yml
 ```
