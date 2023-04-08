@@ -96,9 +96,7 @@ mkdir npm
 ### 4. [Install Nginx Proxy mananger](https://nginxproxymanager.com/setup/#running-the-app)
 
 ```sh
-cd data
-cd docker_data
-cd npm
+cd /root/data/docker_data/npm
 ```
 
 Create docker-compose yaml file and paste the content below
@@ -151,6 +149,8 @@ services:
 Check if the port 81 has been used by existing apps/services
 ```sh
 sudo su root
+```
+```sh
 lsof -i:81
 ```
 The result below shows that port 81 is not used by other apps/services
@@ -159,9 +159,7 @@ The result below shows that port 81 is not used by other apps/services
 
 Start Nginx proxy manager
 ```sh
-cd data
-cd docker_data
-cd npm
+cd /root/data/docker_data/npm
 ```
 
 ```sh
