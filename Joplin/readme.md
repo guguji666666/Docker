@@ -125,3 +125,5 @@ Run the command below to check the internal IP of your docker
 ip addr show docker0
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230730683-6c63c868-cb00-4037-a646-f441753a5497.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230730754-05556ba3-d75f-47fe-b839-74b8f733a61a.png)
