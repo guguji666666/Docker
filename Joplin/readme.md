@@ -116,3 +116,12 @@ docker-compose up -d
 
 ### 5. Create entry for Joplin in Nginx proxy server
 
+![image](https://user-images.githubusercontent.com/96930989/230730596-74245223-177b-4911-ad25-3ebe57ecb4a2.png)
+
+If your nginx proxy server and joplin server are set on the same server
+
+Run the command below to check the internal IP of your docker
+```sh
+ip addr show docker0
+```
+![image](https://user-images.githubusercontent.com/96930989/230730683-6c63c868-cb00-4037-a646-f441753a5497.png)
