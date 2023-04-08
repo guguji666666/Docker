@@ -29,4 +29,9 @@ DNS A record > points "Joplin.abc.com" to the IP of VM that runs Nginx proxy ser
 
 ### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
 
-### 2. 
+### 2. Create directory for Joplin
+
+```sh
+sudo su root
+mkdir /root/data/docker_data/Joplin
+```
