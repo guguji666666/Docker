@@ -202,14 +202,3 @@ Once sign in, you can modify the username and password here
 ![image](https://user-images.githubusercontent.com/96930989/230721353-497789dc-fa4b-431a-bbf1-5d1ec9bb4795.png)
 
 Now the Nginx proxy server is running on your machine
-
-
-
-
-##### Verify that Docker is installed correctly by running the hello-world image:
-```sh
-sudo docker run hello-world
-```
-
-##### That’s it! You now have Docker installed on your Ubuntu 22.04 system.
-![image](https://user-images.githubusercontent.com/96930989/227760708-cf7ccf34-61fa-483a-a6ba-c049c3864f32.png)
