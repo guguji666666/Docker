@@ -1,4 +1,4 @@
-## Deploy your own Joplin cloud
+## Deploy your own Joplin cloud server
 
 * [Create your Joplin account](https://joplinapp.org/)
 * [Official docker image](https://hub.docker.com/r/joplin/server)
