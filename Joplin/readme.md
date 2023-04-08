@@ -97,7 +97,7 @@ services:
         restart: unless-stopped
         environment:
             - APP_PORT=22300
-            - APP_BASE_URL=https://your.domain.com # 改成反代的域名
+            - APP_BASE_URL=https://gjsjoplin.aceultraman.com # 改成反代的域名
             - DB_CLIENT=pg
             - POSTGRES_PASSWORD=changeme # 与上面的密码对应！
             - POSTGRES_DATABASE=joplin
