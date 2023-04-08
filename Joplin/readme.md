@@ -1,6 +1,6 @@
 ## Deploy your own Joplin cloud server
 
-* [Create your Joplin account](https://joplinapp.org/)
+* [Joplin](https://joplinapp.org/)
 * [Official docker image](https://hub.docker.com/r/joplin/server)
 * [Joplin GitHub](https://github.com/laurent22/joplin)
 
@@ -41,4 +41,54 @@ mkdir -p /root/data/docker_data/joplin
 ```
 cd /root/data/docker_data/joplin
 nano docker-compose.yml
+```
+
+```yml
+# This is a sample docker-compose file that can be used to run Joplin Server
+# along with a PostgreSQL server.
+#
+# Update the following fields in the stanza below:
+#
+# POSTGRES_USER
+# POSTGRES_PASSWORD
+# APP_BASE_URL
+#
+# APP_BASE_URL: This is the base public URL where the service will be running.
+#	- If Joplin Server needs to be accessible over the internet, configure APP_BASE_URL as follows: https://example.com/joplin. 
+#	- If Joplin Server does not need to be accessible over the internet, set the the APP_BASE_URL to your server's hostname. 
+#     For Example: http://[hostname]:22300. The base URL can include the port.
+# APP_PORT: The local port on which the Docker container will listen. 
+#	- This would typically be mapped to port to 443 (TLS) with a reverse proxy.
+#	- If Joplin Server does not need to be accessible over the internet, the port can be mapped to 22300.
+
+version: '3'
+
+services:
+    db:
+        image: postgres:13
+        volumes:
+            - ./data/postgres:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"  # 左边的端口可以更换，右边不要动！
+        restart: unless-stopped
+        environment:
+            - POSTGRES_PASSWORD=changeme # 改成你自己的密码
+            - POSTGRES_USER=username  # 改成你自己的用户名
+            - POSTGRES_DB=joplin
+    app:
+        image: joplin/server:latest
+        depends_on:
+            - db
+        ports:
+            - "22300:22300" # 左边的端口可以更换，右边不要动！
+        restart: unless-stopped
+        environment:
+            - APP_PORT=22300
+            - APP_BASE_URL=https://your.domain.com # 改成反代的域名
+            - DB_CLIENT=pg
+            - POSTGRES_PASSWORD=changeme # 与上面的密码对应！
+            - POSTGRES_DATABASE=joplin
+            - POSTGRES_USER=username  # 与上面的用户名对应！
+            - POSTGRES_PORT=5432 # 与上面右边的对应！
+            - POSTGRES_HOST=db
 ```
