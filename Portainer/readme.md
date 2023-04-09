@@ -76,4 +76,10 @@ docker ps
 
 ![image](https://user-images.githubusercontent.com/96930989/230778332-de8f5ca7-368c-4046-8b3f-3dacd4b9db8e.png)
 
+#### 4. Access Portainer panel
 
+Navigate to the domain you created for Portainer
+
+Create new admin user
+
+![image](https://user-images.githubusercontent.com/96930989/230778871-5c6402e6-ff6a-4fe4-afd0-222af6005370.png)
