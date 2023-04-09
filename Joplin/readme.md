@@ -1,18 +1,18 @@
 ## Deploy your own Joplin cloud server
 
-* [Joplin](https://joplinapp.org/)
+* [Get Joplin app](https://joplinapp.org/)
 * [Official docker image](https://hub.docker.com/r/joplin/server)
 * [Joplin GitHub](https://github.com/laurent22/joplin)
 
 ## Before we start
 
-1. Make sure you have a custom domain
+1. Make sure you have a custom domain, for example `abc.com`
 
 2. Add DNS `A` record in your DNS provider, point `FQDN` to your Nginx proxy server's IP
 ```
 For example,
 You bought Domain "abc.com" from DNS provider.
-Then you create FQDN "Joplin.abc.com" for your Joplin service.
+Then you create FQDN "Joplin.abc.com" for your Joplin cloud server
 DNS A record > points "Joplin.abc.com" to the IP of VM that runs Nginx proxy server
 ```
 3. How to get your custom domain
@@ -126,4 +126,43 @@ ip addr show docker0
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230730683-6c63c868-cb00-4037-a646-f441753a5497.png)
 
-![image](https://user-images.githubusercontent.com/96930989/230730754-05556ba3-d75f-47fe-b839-74b8f733a61a.png)
+![image](https://user-images.githubusercontent.com/96930989/230748113-4a8c0adf-2ca4-4c92-bba4-d265a54c4f11.png)
+
+Force SSL 
+
+![image](https://user-images.githubusercontent.com/96930989/230748092-a7066ff7-fca7-433f-a4ca-820f958b2aff.png)
+
+### 6. Access to your Joplin cloud server
+
+Navigate to the domain you created for Joplin cloud server, for example `joplin.abc.com`
+
+As mentioned in the [offical doc](https://joplinapp.org/), the default username and password is
+
+![image](https://user-images.githubusercontent.com/96930989/230748229-554499c0-8435-4315-8003-0528ecb571fe.png)
+
+Username
+```
+admin@localhost
+```
+Password
+```
+admin
+```
+
+![image](https://user-images.githubusercontent.com/96930989/230748248-b4bb5b73-a172-42c8-9290-e5f8a1198ba2.png)
+
+Once you sign in, please change the password and create a new admin user
+
+![image](https://user-images.githubusercontent.com/96930989/230748266-bd580324-b013-411f-8d25-ad4634743d4c.png)
+
+For default admin account, we can only change password. If we change the default username we will get the error
+
+![image](https://user-images.githubusercontent.com/96930989/230748292-30f5da74-2db1-443e-9532-0ec016d194eb.png)
+
+Once we change the password of the default admin account, we need to logout and log in again.
+
+Then click the Admin tab here, create a new admin user
+
+![image](https://user-images.githubusercontent.com/96930989/230748345-15d0ecdd-92b5-4cb2-bcde-6bbdc79383c5.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230748405-5130f810-73a5-4288-806d-bdec8b20a2a6.png)
