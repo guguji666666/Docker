@@ -51,7 +51,7 @@ Force SSL
 
 ![image](https://user-images.githubusercontent.com/96930989/230751620-d1f63263-b970-4050-886d-b491a25d0414.png)
 
-In `advance` tab, insert the below content, replace http://127.0.0.1:3012 and http://127.0.0.1:6666 with your own IP and port
+In `advance` tab, insert the below content, replace http://127.0.0.1:3012 and http://127.0.0.1:7474 with your own IP and port
 ```yml
 location /admin {
   return 404;
@@ -67,8 +67,20 @@ location /admin {
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_set_header X-Forwarded-Proto $scheme;
-    proxy_pass http://127.0.0.1:6666;
+    proxy_pass http://127.0.0.1:7474;
   }
 ```
 
 ![image](https://user-images.githubusercontent.com/96930989/230751706-86c92697-b46e-4773-a529-07861d389c83.png)
+
+### 3. Access your bitwarden server
+
+Type the domain you created for your bitwarden server, and register new account
+
+![image](https://user-images.githubusercontent.com/96930989/230751889-cdbc4df9-9ba5-46d5-ad1a-fff6fb9b2b39.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230751924-d1e8857b-4d0f-4aeb-8468-73ca93953ff4.png)
+
+Now you can sign in !!!
+
+![image](https://user-images.githubusercontent.com/96930989/230751955-c06763a5-f2e4-43f8-a738-b3b6f661e1b2.png)
