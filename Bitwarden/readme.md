@@ -81,18 +81,18 @@ Type the domain you created for your bitwarden server, and register new account
 
 ![image](https://user-images.githubusercontent.com/96930989/230751924-d1e8857b-4d0f-4aeb-8468-73ca93953ff4.png)
 
-Now you can sign in !!!
+Now you can sign in your bitwarden server
 
 ![image](https://user-images.githubusercontent.com/96930989/230751955-c06763a5-f2e4-43f8-a738-b3b6f661e1b2.png)
 
-### 4. Disable new account registration since the server is only used by yourself
+### 4. Disable new account registration if the server is only used by yourself
 
-```
+```sh
 sudo su root
 cd ~
 ```
 
-Stop bitwarden and clear itscontainer
+Stop bitwarden and clear its container
 ```sh
 docker stop bitwardenrs
 ```
