@@ -84,3 +84,39 @@ Type the domain you created for your bitwarden server, and register new account
 Now you can sign in !!!
 
 ![image](https://user-images.githubusercontent.com/96930989/230751955-c06763a5-f2e4-43f8-a738-b3b6f661e1b2.png)
+
+### 4. Disable new account registration since the server is only used by yourself
+
+```
+sudo su root
+cd ~
+```
+
+Stop bitwarden and clear itscontainer
+```sh
+docker stop bitwardenrs
+```
+```sh
+docker rm -f bitwardenrs
+```
+![image](https://user-images.githubusercontent.com/96930989/230753186-1f41f431-eba6-41b9-b341-5b9fd67c5b50.png)
+
+Replace `demo` with your customized name, for example `gg`
+```sh
+docker run -d --name bitwardenrs \
+  --restart unless-stopped \
+  -e SIGNUPS_ALLOWED=false \
+  -e WEBSOCKET_ENABLED=true \
+  -v /www/wwwroot/demo/:/data/ \
+  -p 7474:80 \
+  -p 3012:3012 \
+  vaultwarden/server:latest
+```
+
+Check the bitwarden is back
+```sh
+docker ps
+```
+
+![image](https://user-images.githubusercontent.com/96930989/230753215-e788889f-3104-4563-9276-93dda566ddd6.png)
+
