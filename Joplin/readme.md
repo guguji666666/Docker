@@ -166,3 +166,12 @@ Then click the Admin tab here, create a new admin user
 ![image](https://user-images.githubusercontent.com/96930989/230748345-15d0ecdd-92b5-4cb2-bcde-6bbdc79383c5.png)
 
 ![image](https://user-images.githubusercontent.com/96930989/230748405-5130f810-73a5-4288-806d-bdec8b20a2a6.png)
+
+The new user will exist here
+
+![image](https://user-images.githubusercontent.com/96930989/230748470-6d7428aa-c622-4887-953d-4d0ceff3c90f.png)
+
+Logout and log in with your new account, confirm the mail sent to your mailbox
+
+![image](https://user-images.githubusercontent.com/96930989/230748493-b5582995-5718-4433-b1c8-c1c992aba7eb.png)
+
