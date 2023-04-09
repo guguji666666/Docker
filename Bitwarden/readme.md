@@ -1,4 +1,4 @@
-## Deploy your own bitwardern server to store your passwords
+## Deploy your own bitwarden server to store your passwords
 
 ## Before we start
 
@@ -22,3 +22,19 @@ DNS A record > points "bitwarden.abc.com" to the IP of VM that runs Nginx proxy 
 
 
 ## Start deployment
+
+```sh
+sudo su root
+cd ~
+```
+
+Replace `demo` with your customized name, for example `gg`
+```sh
+docker run -d --name bitwardenrs \
+  --restart unless-stopped \
+  -e WEBSOCKET_ENABLED=true \
+  -v /www/wwwroot/demo/:/data/ \
+  -p 6666:80 \
+  -p 3012:3012 \
+  vaultwarden/server:latest
+```
