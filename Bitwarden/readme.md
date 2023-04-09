@@ -117,6 +117,8 @@ Check the bitwarden is back
 ```sh
 docker ps
 ```
-
 ![image](https://user-images.githubusercontent.com/96930989/230753215-e788889f-3104-4563-9276-93dda566ddd6.png)
 
+Verify if the setting takes affect, we tried to register a new account and got the error
+
+![image](https://user-images.githubusercontent.com/96930989/230753294-61a52d3e-1cab-4924-a1b1-1b9e9f71a360.png)
