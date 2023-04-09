@@ -83,3 +83,10 @@ Navigate to the domain you created for Portainer
 Create new admin user
 
 ![image](https://user-images.githubusercontent.com/96930989/230778871-5c6402e6-ff6a-4fe4-afd0-222af6005370.png)
+
+Log in, click `Get started`
+
+![image](https://user-images.githubusercontent.com/96930989/230779047-e0b6f9f9-dab0-4f1e-b40e-c92397d7d34a.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230779016-df2e091b-51e3-4550-b5b0-2955214e3b45.png)
+
