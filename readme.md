@@ -1,9 +1,13 @@
-## Install Docker on Ubuntu 22.04 LTS or Debian
+## Install Docker on Ubuntu 22.04 LTS or Debian 10
 
 * [Install Docker](https://docs.docker.com/get-docker/)
 * [Install Docker Compose](https://docs.docker.com/compose/install/)
 
+
+
+
 ### 1. Check system time and install common softwares
+
 Check current system time
 ```sh
 date
@@ -192,11 +196,41 @@ changeme
 ```
 ![image](https://user-images.githubusercontent.com/96930989/227784662-49396ef1-0092-4a6c-9cd3-177022e58eb9.png)
 
-
-Once sign in, you can modify the username and password here
+Once you log in, you can modify the username and password here
 
 ![image](https://user-images.githubusercontent.com/96930989/227771973-4e327ca0-8c46-47a4-ac0b-2e1dee7bbeeb.png)
 
 ![image](https://user-images.githubusercontent.com/96930989/230721353-497789dc-fa4b-431a-bbf1-5d1ec9bb4795.png)
 
 Now the Nginx proxy server is running on your machine
+
+6. Enable SSL when you access your Nginx proxy manager
+
+a. Make sure you have a custom domain
+b. Add DNS `A` record in your DNS provider, point `FQDN` to your Nginx proxy server's IP
+```
+For example,
+You bought Domain "abc.com" from DNS provider.
+Then you create FQDN "nginxproxy.abc.com" for your Nginx proxy server.
+DNS A record > points "nginxproxy.abc.com" to the IP of Nginx proxy server.
+```
+c. How to get your custom domain
+* [Get custom domain from Aliyun](https://wanwang.aliyun.com/domain/)
+
+* [Manage your custom domain in Aliyun](https://account.aliyun.com/login/login.htm?oauth_callback=http%3A%2F%2Fdc.console.aliyun.com%2Fnext%2Findex%3Fspm%3D5176.2020520207.recommends.ddomain.606c4c12SpdlTJ#/domain/list/all-domain)
+
+* [Get custom domain from Tecent](https://cloud.tencent.com/act/pro/domain_sales?fromSource=gwzcw.6927084.6927084.6927084&utm_medium=cpc&utm_id=gwzcw.6927084.6927084.6927084&bd_vid=11313871833741623980)
+
+* [Manage your custom domain in Tecent](https://cloud.tencent.com/login?s_url=https%3A%2F%2Fconsole.cloud.tencent.com%2Flighthouse%2Fdomain%2Findex%3Frid%3D1)
+
+d. Enter the domain name you created for Nginx proxy manager, point to the IP of proxy server and port 81, and save
+
+![image](https://user-images.githubusercontent.com/96930989/230773897-1bbc6bf5-6f20-40a3-a668-f369c4468b4d.png)
+
+e. Once the entry is created, edit it
+
+![image](https://user-images.githubusercontent.com/96930989/230773954-83f02744-588b-4266-9fb2-2d7390afde7d.png)
+
+f. Force SSL
+
+![image](https://user-images.githubusercontent.com/96930989/230773979-5b7feac7-7516-4b1b-8a73-7caada91342f.png)
