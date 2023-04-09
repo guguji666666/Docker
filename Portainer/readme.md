@@ -39,6 +39,9 @@ Confirm that the directory has been created
 
 ![image](https://user-images.githubusercontent.com/96930989/230777692-0e94ef41-4961-4cc8-85e0-7112fca2a7c7.png)
 
+
+#### 2. Install Portainer
+
 Check if the port 8000 and 9443 have been used by other existing apps/services
 ```sh
 cd ~
@@ -66,3 +69,11 @@ Verify the portainer is running
 docker ps
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230777960-71697cb6-d23b-48a1-b7ca-d84e939b492e.png)
+
+#### 3. Create entry for Portiner in Nginx proxy server and force SSL
+
+![image](https://user-images.githubusercontent.com/96930989/230778323-8555df1f-6571-4295-ac17-a258ac5f6566.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230778332-de8f5ca7-368c-4046-8b3f-3dacd4b9db8e.png)
+
+
