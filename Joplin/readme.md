@@ -175,3 +175,23 @@ Logout and log in with your new account, confirm the mail sent to your mailbox
 
 ![image](https://user-images.githubusercontent.com/96930989/230748493-b5582995-5718-4433-b1c8-c1c992aba7eb.png)
 
+Copy this url to your notepad, we need it later
+
+![image](https://user-images.githubusercontent.com/96930989/230748660-38967147-6402-433f-9a1e-6ce470cbf793.png)
+
+
+### 7. Set up synchronization
+
+Navigate to your Joplin app, click tools > options
+
+![image](https://user-images.githubusercontent.com/96930989/230748629-e1b396ea-198a-4a13-9573-9b2a7ab97bf6.png)
+
+Type the url, the username and password of the new account we created in Joplin cloud server before
+
+![image](https://user-images.githubusercontent.com/96930989/230748698-ccf30533-59e8-462f-8402-0d050497d6bf.png)
+
+
+### 8. Save the website in markdown format into your Joplin notebook
+
+![image](https://user-images.githubusercontent.com/96930989/230749159-1b092770-f157-4934-a2b2-ff99ce7c8cc9.png)
+
