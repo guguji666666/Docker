@@ -1,5 +1,7 @@
 ## Deploy your own bitwarden server to store your passwords
 
+[Download bitwarden](https://bitwarden.com/download/)
+
 ## Before we start
 
 1. Make sure you have a custom domain, for example `abc.com`
