@@ -199,3 +199,6 @@ Once the extension is installed, we can use it to save the website
 
 ![image](https://user-images.githubusercontent.com/96930989/230749204-9aa47215-d35e-434e-8cc6-1eb5dd507825.png)
 
+Once the note is saved, we'll see the message
+
+![image](https://user-images.githubusercontent.com/96930989/230749242-cb396c7d-fe41-472b-963b-7aad64a96dfe.png)
