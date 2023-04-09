@@ -202,3 +202,23 @@ Once the extension is installed, we can use it to save the website
 Once the note is saved, we'll see the message
 
 ![image](https://user-images.githubusercontent.com/96930989/230749242-cb396c7d-fe41-472b-963b-7aad64a96dfe.png)
+
+### 9. Edit markdown notes using external tool
+
+![image](https://user-images.githubusercontent.com/96930989/230749815-93a16bac-aeb7-4228-b9db-0ece9ab16a10.png)
+
+I choose VS code here (need to show hidden items)
+
+![image](https://user-images.githubusercontent.com/96930989/230749917-dc2e0b08-1b0c-4eb9-ace1-a699975c9efd.png)
+
+Click the button here when editing the notes
+
+![image](https://user-images.githubusercontent.com/96930989/230749952-9a204037-03cd-476d-bc4c-6f2904eb65e5.png)
+
+The VS code will pop up
+
+![image](https://user-images.githubusercontent.com/96930989/230749960-5cde0ebf-4cbd-4633-a2ab-e6a11493cfb9.png)
+
+Once you finish editing, save the file and click `stop` here
+
+![image](https://user-images.githubusercontent.com/96930989/230749974-3a6c1e3c-b23d-46a5-9c62-2863c8c09e02.png)
