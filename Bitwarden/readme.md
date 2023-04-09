@@ -25,6 +25,7 @@ DNS A record > points "bitwarden.abc.com" to the IP of VM that runs Nginx proxy 
 
 ## Start deployment
 
+### 1. Install bitwarden image
 ```sh
 sudo su root
 cd ~
@@ -36,7 +37,13 @@ docker run -d --name bitwardenrs \
   --restart unless-stopped \
   -e WEBSOCKET_ENABLED=true \
   -v /www/wwwroot/demo/:/data/ \
-  -p 6666:80 \
+  -p 7474:80 \
   -p 3012:3012 \
   vaultwarden/server:latest
 ```
+![image](https://user-images.githubusercontent.com/96930989/230751321-cb963a56-0e3a-45ad-b714-b4b56af1a744.png)
+
+### 2. Create entry for bitwarden in Nginx proxy server
+
+![image](https://user-images.githubusercontent.com/96930989/230751562-c7250f3c-eb91-40a6-84ac-91fce4203bd1.png)
+
