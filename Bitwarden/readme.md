@@ -45,5 +45,30 @@ docker run -d --name bitwardenrs \
 
 ### 2. Create entry for bitwarden in Nginx proxy server
 
-![image](https://user-images.githubusercontent.com/96930989/230751562-c7250f3c-eb91-40a6-84ac-91fce4203bd1.png)
+![image](https://user-images.githubusercontent.com/96930989/230751601-e44ea706-359f-43c8-bef4-be48bde60ed6.png)
 
+Force SSL
+
+![image](https://user-images.githubusercontent.com/96930989/230751620-d1f63263-b970-4050-886d-b491a25d0414.png)
+
+In `advance` tab, insert the below content, replace http://127.0.0.1:3012 and http://127.0.0.1:6666 with your own IP and port
+```yml
+location /admin {
+  return 404;
+  }
+  location /notifications/hub {
+    proxy_pass http://127.0.0.1:3012;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "upgrade";
+  }
+  
+  location /notifications/hub/negotiate {
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_pass http://127.0.0.1:6666;
+  }
+```
+
+![image](https://user-images.githubusercontent.com/96930989/230751706-86c92697-b46e-4773-a529-07861d389c83.png)
