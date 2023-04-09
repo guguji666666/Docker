@@ -195,3 +195,7 @@ Type the url, the username and password of the new account we created in Joplin 
 
 ![image](https://user-images.githubusercontent.com/96930989/230749159-1b092770-f157-4934-a2b2-ff99ce7c8cc9.png)
 
+Once the extension is installed, we can use it to save the website
+
+![image](https://user-images.githubusercontent.com/96930989/230749204-9aa47215-d35e-434e-8cc6-1eb5dd507825.png)
+
