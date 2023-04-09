@@ -72,7 +72,7 @@ docker ps
 
 #### 3. Create entry for Portiner in Nginx proxy server and force SSL
 
-![image](https://user-images.githubusercontent.com/96930989/230778323-8555df1f-6571-4295-ac17-a258ac5f6566.png)
+![image](https://user-images.githubusercontent.com/96930989/230778723-9b35d543-969e-48eb-86e2-c7b058914148.png)
 
 ![image](https://user-images.githubusercontent.com/96930989/230778332-de8f5ca7-368c-4046-8b3f-3dacd4b9db8e.png)
 
