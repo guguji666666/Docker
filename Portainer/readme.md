@@ -3,7 +3,7 @@
 ### [Install Portainer](https://www.portainer.io/install)
 ![image](https://user-images.githubusercontent.com/96930989/230776317-6ce85bfb-43b2-4e5d-9279-656fe1184191.png)
 
-### [Install Portainer Community Edition](https://docs.portainer.io/start/install-ce/server/docker/linux)
+### [Install Portainer Community Edition](https://docs.portainer.io/start/install-ce/server/docker/linux#deployment)
 
 ## Before we start
 
@@ -27,3 +27,42 @@ DNS A record > points "portainer.abc.com" to the IP of VM that runs Nginx proxy 
 
 
 ## Start deployment
+
+#### 1. Create the directory for portainer
+
+We use custom path here for portainer
+```sh
+mkdir /root/data/docker_data/portainer
+```
+
+Confirm that the directory has been created
+
+![image](https://user-images.githubusercontent.com/96930989/230777692-0e94ef41-4961-4cc8-85e0-7112fca2a7c7.png)
+
+Check if the port 8000 and 9443 have been used by other existing apps/services
+```sh
+cd ~
+```
+```sh
+lsof -i:8000
+```
+```sh
+lsof -i:9443
+```
+![image](https://user-images.githubusercontent.com/96930989/230777522-c5eb7e4c-3b14-40b1-b039-5216575332e9.png)
+
+Then install portainer
+```sh
+cd /root/data/docker_data/portainer/
+```
+
+```sh
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /root/data/docker_data/portainer/data:/data portainer/portainer-ce:latest
+```
+![image](https://user-images.githubusercontent.com/96930989/230777879-26c4a792-43c5-4de1-9703-d86d0a7f7b65.png)
+
+Verify the portainer is running
+```sh
+docker ps
+```
+![image](https://user-images.githubusercontent.com/96930989/230777960-71697cb6-d23b-48a1-b7ca-d84e939b492e.png)
