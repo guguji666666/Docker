@@ -138,7 +138,16 @@ The link here could be used directly in markdown file 😊
 
 ![image](https://user-images.githubusercontent.com/96930989/230821094-f2850c48-4e9e-4da3-8325-fc24b523cda7.png)
 
-### 7. Use browser extension to upload images to your Easyimage server
+
+### 7. Use client app or browser extension to upload images to your Easyimage server
+
+#### [Client app](https://github.com/icret/EasyImages2.0/blob/master/docs/%E4%BD%BF%E7%94%A8PicGo%E4%B8%8A%E4%BC%A0.md)
+
+![image](https://user-images.githubusercontent.com/96930989/230832329-34c4811a-f221-40ec-bad1-b8b7087b9733.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230832344-fb2995b8-46a0-4859-a897-89af4cea294f.png)
+
+#### Browser extension
 
 [Download the extension for easyiamge](https://github.com/icret/EasyImages2.0/tree/master/docs)
 
