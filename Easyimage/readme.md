@@ -43,10 +43,16 @@ cd /root/data/docker_data/easyimage
 Check if port 8080 has been used by other existing apps/services
 ```sh
 cd ~
+```
+```sh
 lsof -i:8080
 ```
 
 Configure yaml file
+```sh
+cd /root/data/docker_data/easyimage
+```
+
 ```sh
 nano docker-compose.yml
 ```
