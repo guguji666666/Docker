@@ -83,3 +83,23 @@ Start Easyimage
 docker-compose up -d
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230817543-d6487faa-e489-4405-85fa-1e44011733df.png)
+
+### 4. Create entry for easyimage in Nginx proxy manager
+
+If Nginx proxy manager and easyimage are deployed on the same server, then we can get internal IP of container
+```sh
+ip addr show docker0
+```
+Note this IP
+
+![image](https://user-images.githubusercontent.com/96930989/230817976-ddeea198-d635-4095-83c2-469712e13623.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230818482-fdca07ac-f8e1-4794-a5bb-c6fbac01e051.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230818550-ac619617-34d6-4eaf-9d8f-2959befba020.png)
+
+
+```sh
+cd /root/data/docker_data/easyimage/config
+```
+
