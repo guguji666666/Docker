@@ -32,7 +32,7 @@ DNS A record > points "portainer.abc.com" to the IP of VM that runs Nginx proxy 
 
 We use custom path here for portainer
 ```sh
-mkdir /root/data/docker_data/portainer
+mkdir -p /root/data/docker_data/portainer
 ```
 
 Confirm that the directory has been created
