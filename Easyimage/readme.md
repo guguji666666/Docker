@@ -1,4 +1,4 @@
-## Deploy your own server to store images/pictures
+## Deploy your own Easyimage server to store images/pictures
 
 * [EasyImages 2.0 github](https://github.com/icret/EasyImages2.0)
 * [Docker image](https://hub.docker.com/r/ddsderek/easyimage)
@@ -99,7 +99,7 @@ nano config.php
 
 Replace `domain` and `imgurl` with the domain you created for easyimage
 
-![image](https://user-images.githubusercontent.com/96930989/230819048-4542930d-4a97-4312-b753-850dc432030a.png)
+![image](https://user-images.githubusercontent.com/96930989/230820158-1c8cbef1-802d-469b-8c01-fa125edcc6b0.png)
 
 Then restart Easyimage
 ```sh
@@ -124,6 +124,13 @@ Note this IP
 ### 5. Access your Easyimage server
 
 ![image](https://user-images.githubusercontent.com/96930989/230819410-42be08de-bcb5-4b1e-a774-836cb6085755.png)
+
+![image](https://user-images.githubusercontent.com/96930989/230819786-03e056cf-afa9-4145-b3b9-977a21aa2a1f.png)
+
+Then you will be redirected to the sign-in page
+
+![image](https://user-images.githubusercontent.com/96930989/230819928-ec22f104-9495-4418-b519-621b60cf0d15.png)
+
 
 
 
