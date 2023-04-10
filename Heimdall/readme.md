@@ -1,4 +1,4 @@
-### 3. [Useful components on docker](https://www.youtube.com/watch?v=pBwIm6m6x7M)
+### [Useful components on docker](https://www.youtube.com/watch?v=pBwIm6m6x7M)
 #### 1. [Heimdall - an amazingly clean, user-friendly Shortcut and Informational Dashboard!](https://www.youtube.com/watch?v=qFqUXN0jxMQ)
 * [Heimdall official github](https://github.com/linuxserver/Heimdall)
 * [Heimdall site](https://heimdall.site/)
