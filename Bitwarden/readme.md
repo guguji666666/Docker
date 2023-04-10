@@ -25,7 +25,9 @@ DNS A record > points "bitwarden.abc.com" to the IP of VM that runs Nginx proxy 
 
 ## Start deployment
 
-### 1. Install bitwarden image
+### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
+
+### 2. Install bitwarden image
 ```sh
 sudo su root
 cd ~
@@ -43,7 +45,7 @@ docker run -d --name bitwardenrs \
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230751321-cb963a56-0e3a-45ad-b714-b4b56af1a744.png)
 
-### 2. Create entry for bitwarden in Nginx proxy server
+### 3. Create entry for bitwarden in Nginx proxy server
 
 ![image](https://user-images.githubusercontent.com/96930989/230751601-e44ea706-359f-43c8-bef4-be48bde60ed6.png)
 
@@ -73,7 +75,7 @@ location /admin {
 
 ![image](https://user-images.githubusercontent.com/96930989/230751706-86c92697-b46e-4773-a529-07861d389c83.png)
 
-### 3. Access your bitwarden server
+### 4. Access your bitwarden server
 
 Type the domain you created for your bitwarden server, and register new account
 
@@ -85,7 +87,7 @@ Now you can sign in your bitwarden server
 
 ![image](https://user-images.githubusercontent.com/96930989/230751955-c06763a5-f2e4-43f8-a738-b3b6f661e1b2.png)
 
-### 4. Disable new account registration if the server is only used by yourself
+### 5. Disable new account registration if the server is only used by yourself
 
 ```sh
 sudo su root
