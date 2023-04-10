@@ -136,3 +136,48 @@ Then you will be redirected to the sign-in page
 The link here could be used directly in markdown file 😊
 
 ![image](https://user-images.githubusercontent.com/96930989/230821094-f2850c48-4e9e-4da3-8325-fc24b523cda7.png)
+
+## Optional
+
+#### 1. Update Easyimage
+Navigate to the directory of Easyimage
+```sh
+cd /root/data/docker_data/easyimage
+```
+
+Pull latest image
+```sh
+docker-compose pull
+```
+
+Update image
+```sh
+docker-compose up -d
+```
+
+Delete directory of installation file
+```sh
+docker exec -it easyimage rm -rf /app/web/install #因为更新后镜像自带install目录，所以要删除
+```
+
+#### 2. Uninstall Easyimage
+
+```sh
+sudo su root
+```
+
+```sh
+cd /root/data/docker_data/easyimage
+```
+
+```sh
+docker-compose down
+```
+
+```sh
+cd ~
+```
+
+```sh
+rm -rf /root/data/docker_data/easyimage
+```
