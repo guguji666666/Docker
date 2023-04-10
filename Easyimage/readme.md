@@ -78,6 +78,7 @@ services:
 
 ![image](https://user-images.githubusercontent.com/96930989/230817422-6aa77896-94be-4027-9a6a-4c99c509947f.png)
 
+
 Start Easyimage
 ```sh
 docker-compose up -d
@@ -102,7 +103,7 @@ Replace `domain` and `imgurl` with the domain you created for easyimage
 
 Then restart Easyimage
 ```sh
-cd cd /root/data/docker_data/easyimage
+cd /root/data/docker_data/easyimage
 docker-compose restart
 ```
 
