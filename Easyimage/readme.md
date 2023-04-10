@@ -28,3 +28,41 @@ DNS A record > points "image.abc.com" to the IP of Nginx proxy server
 ## Start deployment
 
 ### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
+
+### 2. Create directory for Easyimage
+
+```sh
+mkdir -p /root/data/docker_data/easyimage
+cd /root/data/docker_data/easyimage
+```
+
+### 3. Create yaml file for Easyimage
+
+Check if port 8080 has been used by other existing apps/services
+```sh
+cd ~
+lsof -i:8080
+```
+
+Configure yaml file
+```sh
+nano docker-compose.yml
+```
+Insert the content below
+```yml
+version: '3.3'
+services:
+  easyimage:
+    image: ddsderek/easyimage:latest
+    container_name: easyimage
+    ports:
+      - '8080:80'
+    environment:
+      - TZ=Asia/Shanghai
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - '/root/data/docker_data/easyimage/config:/app/web/config'
+      - '/root/data/docker_data/easyimage/i:/app/web/i'
+    restart: unless-stopped
+```
