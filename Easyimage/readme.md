@@ -121,6 +121,9 @@ Note this IP
 
 ![image](https://user-images.githubusercontent.com/96930989/230818550-ac619617-34d6-4eaf-9d8f-2959befba020.png)
 
+### 5. Access your Easyimage server
+
+![image](https://user-images.githubusercontent.com/96930989/230819410-42be08de-bcb5-4b1e-a774-836cb6085755.png)
 
 
 
