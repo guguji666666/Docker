@@ -1,8 +1,7 @@
-## Install Docker on Ubuntu 22.04 LTS or Debian 10
+## Install Docker Docker-compose and Nginx proxy manager on Ubuntu 22.04 LTS
 
 * [Install Docker](https://docs.docker.com/get-docker/)
 * [Install Docker Compose](https://docs.docker.com/compose/install/)
-
 
 ### 1. Check system time and install common softwares
 
