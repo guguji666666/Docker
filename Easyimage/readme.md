@@ -75,3 +75,8 @@ services:
     restart: unless-stopped
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230806090-e31a7304-7d72-47a4-a679-9d50920230fc.png)
+
+Start Easyimage
+```sh
+docker-compose up -d
+```
