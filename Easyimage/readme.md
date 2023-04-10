@@ -148,7 +148,7 @@ Get your API url and token here
 
 ![image](https://user-images.githubusercontent.com/96930989/230824038-78f34869-9b45-457e-8232-d31ff3cc2f83.png)
 
-Insert the API url and API token
+Insert the API url and API token when whe conigure the extension
 
 ![image](https://user-images.githubusercontent.com/96930989/230824149-38470ea3-fe13-490b-8ffa-7ffae633a383.png)
 
