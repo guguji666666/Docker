@@ -131,11 +131,30 @@ Then you will be redirected to the sign-in page
 
 ![image](https://user-images.githubusercontent.com/96930989/230819928-ec22f104-9495-4418-b519-621b60cf0d15.png)
 
+
 ### 6. Test uploading pictures
 
 The link here could be used directly in markdown file 😊
 
 ![image](https://user-images.githubusercontent.com/96930989/230821094-f2850c48-4e9e-4da3-8325-fc24b523cda7.png)
+
+### 7. Use browser extension to upload images to your Easyimage server
+
+[Download the extension for easyiamge](https://github.com/icret/EasyImages2.0/tree/master/docs)
+
+![image](https://user-images.githubusercontent.com/96930989/230823918-31c5a067-971d-4ca9-8c41-13b1b4ed66d9.png)
+
+Get your API url and token here
+
+![image](https://user-images.githubusercontent.com/96930989/230824038-78f34869-9b45-457e-8232-d31ff3cc2f83.png)
+
+Insert the API url and API token
+
+![image](https://user-images.githubusercontent.com/96930989/230824149-38470ea3-fe13-490b-8ffa-7ffae633a383.png)
+
+
+[]()
+
 
 ## Optional
 
