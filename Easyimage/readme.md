@@ -152,8 +152,9 @@ Insert the API url and API token when whe conigure the extension
 
 ![image](https://user-images.githubusercontent.com/96930989/230824149-38470ea3-fe13-490b-8ffa-7ffae633a383.png)
 
+Enable API uploading
 
-[]()
+![image](https://user-images.githubusercontent.com/96930989/230824757-61db98c6-93db-4561-88f0-3a1ec7ad03ab.png)
 
 
 ## Optional
