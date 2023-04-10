@@ -91,7 +91,7 @@ Once these steps are done, save the file with `CTRL + O`, then Enter to confirm,
 docker-compose up -d
 ```
 
-Give it time to download the image, and start the container. Remember to add inbound rule for the port in defined in the yml file
+It takes some time to download the image, and start the container. Remember to add inbound rule for the port in defined in the yml file
 
 ![image](https://user-images.githubusercontent.com/96930989/227764638-202e5941-738d-454b-968c-882b734756e5.png)
 
