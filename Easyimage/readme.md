@@ -26,3 +26,5 @@ DNS A record > points "image.abc.com" to the IP of Nginx proxy server
 
 
 ## Start deployment
+
+### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
