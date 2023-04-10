@@ -76,7 +76,10 @@ services:
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230806090-e31a7304-7d72-47a4-a679-9d50920230fc.png)
 
+![image](https://user-images.githubusercontent.com/96930989/230817422-6aa77896-94be-4027-9a6a-4c99c509947f.png)
+
 Start Easyimage
 ```sh
 docker-compose up -d
 ```
+![image](https://user-images.githubusercontent.com/96930989/230817543-d6487faa-e489-4405-85fa-1e44011733df.png)
