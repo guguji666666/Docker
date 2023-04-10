@@ -28,7 +28,9 @@ DNS A record > points "portainer.abc.com" to the IP of VM that runs Nginx proxy 
 
 ## Start deployment
 
-#### 1. Create the directory for portainer
+#### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
+
+#### 2. Create the directory for portainer
 
 We use custom path here for portainer
 ```sh
@@ -40,7 +42,7 @@ Confirm that the directory has been created
 ![image](https://user-images.githubusercontent.com/96930989/230777692-0e94ef41-4961-4cc8-85e0-7112fca2a7c7.png)
 
 
-#### 2. Install Portainer
+#### 3. Install Portainer
 
 Check if the port 8000 and 9443 have been used by other existing apps/services
 ```sh
@@ -70,13 +72,13 @@ docker ps
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230777960-71697cb6-d23b-48a1-b7ca-d84e939b492e.png)
 
-#### 3. Create entry for Portiner in Nginx proxy server and force SSL
+#### 4. Create entry for Portiner in Nginx proxy server and force SSL
 
 ![image](https://user-images.githubusercontent.com/96930989/230778723-9b35d543-969e-48eb-86e2-c7b058914148.png)
 
 ![image](https://user-images.githubusercontent.com/96930989/230778332-de8f5ca7-368c-4046-8b3f-3dacd4b9db8e.png)
 
-#### 4. Access Portainer panel
+#### 5. Access Portainer panel
 
 Navigate to the domain you created for Portainer
 
