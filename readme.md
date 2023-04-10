@@ -4,8 +4,6 @@
 * [Install Docker Compose](https://docs.docker.com/compose/install/)
 
 
-
-
 ### 1. Check system time and install common softwares
 
 Check current system time
