@@ -84,6 +84,28 @@ docker-compose up -d
 ```
 ![image](https://user-images.githubusercontent.com/96930989/230817543-d6487faa-e489-4405-85fa-1e44011733df.png)
 
+
+### 4. Modify local config file
+```sh
+cd /root/data/docker_data/easyimage/config
+```
+```sh
+ll
+```
+```sh
+nano config.php
+```
+
+Replace `domain` and `imgurl` with the domain you created for easyimage
+
+![image](https://user-images.githubusercontent.com/96930989/230819048-4542930d-4a97-4312-b753-850dc432030a.png)
+
+Then restart Easyimage
+```sh
+cd cd /root/data/docker_data/easyimage
+docker-compose restart
+```
+
 ### 4. Create entry for easyimage in Nginx proxy manager
 
 If Nginx proxy manager and easyimage are deployed on the same server, then we can get internal IP of container
@@ -99,7 +121,5 @@ Note this IP
 ![image](https://user-images.githubusercontent.com/96930989/230818550-ac619617-34d6-4eaf-9d8f-2959befba020.png)
 
 
-```sh
-cd /root/data/docker_data/easyimage/config
-```
+
 
