@@ -86,11 +86,23 @@ systemctl restart docker
 
 ```sh
 sudo su root
+```
+```sh
 cd ~
+```
+```sh
 mkdir data
+```
+```sh
 cd data
+```
+```sh
 mkdir docker_data
+```
+```sh
 cd docker_data
+```
+```sh
 mkdir npm
 ```
 
