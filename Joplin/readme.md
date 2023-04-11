@@ -57,23 +57,6 @@ nano docker-compose.yml
 
 Paste the contect below to yaml file
 ```yml
-# This is a sample docker-compose file that can be used to run Joplin Server
-# along with a PostgreSQL server.
-#
-# Update the following fields in the stanza below:
-#
-# POSTGRES_USER
-# POSTGRES_PASSWORD
-# APP_BASE_URL
-#
-# APP_BASE_URL: This is the base public URL where the service will be running.
-#	- If Joplin Server needs to be accessible over the internet, configure APP_BASE_URL as follows: https://example.com/joplin. 
-#	- If Joplin Server does not need to be accessible over the internet, set the the APP_BASE_URL to your server's hostname. 
-#     For Example: http://[hostname]:22300. The base URL can include the port.
-# APP_PORT: The local port on which the Docker container will listen. 
-#	- This would typically be mapped to port to 443 (TLS) with a reverse proxy.
-#	- If Joplin Server does not need to be accessible over the internet, the port can be mapped to 22300.
-
 version: '3'
 
 services:
