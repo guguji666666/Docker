@@ -108,6 +108,19 @@ mkdir npm
 
 ### 4. [Install Nginx Proxy mananger](https://nginxproxymanager.com/setup/#running-the-app)
 
+Check if the port 81 has been used by existing apps/services
+```sh
+sudo su root
+```
+```sh
+cd ~
+```
+```sh
+lsof -i:81
+```
+The result below shows that port 81 is not used by other apps/services
+
+![image](https://user-images.githubusercontent.com/96930989/230721022-393ef763-da1d-42eb-96e3-578e68e73c88.png)
 ```sh
 cd /root/data/docker_data/npm
 ```
@@ -159,16 +172,7 @@ services:
 
 ![image](https://user-images.githubusercontent.com/96930989/230720788-21e84c90-f00b-4af9-be7a-821491c87fcb.png)
 
-Check if the port 81 has been used by existing apps/services
-```sh
-sudo su root
-```
-```sh
-lsof -i:81
-```
-The result below shows that port 81 is not used by other apps/services
 
-![image](https://user-images.githubusercontent.com/96930989/230721022-393ef763-da1d-42eb-96e3-578e68e73c88.png)
 
 Start Nginx proxy manager
 ```sh
