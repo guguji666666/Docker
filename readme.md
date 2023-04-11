@@ -246,4 +246,4 @@ e. Once the entry is created, edit it
 
 f. Force SSL
 
-![image](https://user-images.githubusercontent.com/96930989/230773979-5b7feac7-7516-4b1b-8a73-7caada91342f.png)
+![image](https://user-images.githubusercontent.com/96930989/231041571-e31df3aa-20b9-4d8f-9d94-99d2141a07fa.png)
