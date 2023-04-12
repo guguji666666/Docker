@@ -92,6 +92,7 @@ sudo -i
 cd ~
 ```
 ```sh
+apt install lsof
 lsof -i:81
 ```
 
