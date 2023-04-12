@@ -102,7 +102,6 @@ The result below shows that port 81 is not used by other apps/services
 
 ```sh
 mkdir -p /root/data/docker_data/npm
-cd /root/data/docker_data/npm
 ```
 
 ```sh
