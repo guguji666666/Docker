@@ -82,35 +82,11 @@ Restart Docker service
 systemctl restart docker
 ```
 
-### 3. Create folder for docker apps
-
-```sh
-sudo su root
-```
-```sh
-cd ~
-```
-```sh
-mkdir data
-```
-```sh
-cd data
-```
-```sh
-mkdir docker_data
-```
-```sh
-cd docker_data
-```
-```sh
-mkdir npm
-```
-
-### 4. [Install Nginx Proxy mananger](https://nginxproxymanager.com/setup/#running-the-app)
+### 3. [Install Nginx Proxy mananger](https://nginxproxymanager.com/setup/#running-the-app)
 
 Check if the port 81 has been used by existing apps/services
 ```sh
-sudo su root
+sudo -i
 ```
 ```sh
 cd ~
@@ -118,9 +94,16 @@ cd ~
 ```sh
 lsof -i:81
 ```
+
 The result below shows that port 81 is not used by other apps/services
 
 ![image](https://user-images.githubusercontent.com/96930989/230721022-393ef763-da1d-42eb-96e3-578e68e73c88.png)
+
+```sh
+mkdir -p /root/data/docker_data/npm
+cd /root/data/docker_data/npm
+```
+
 ```sh
 cd /root/data/docker_data/npm
 ```
@@ -173,7 +156,6 @@ services:
 ![image](https://user-images.githubusercontent.com/96930989/230720788-21e84c90-f00b-4af9-be7a-821491c87fcb.png)
 
 
-
 Start Nginx proxy manager
 ```sh
 cd /root/data/docker_data/npm
@@ -185,7 +167,7 @@ docker-compose up -d
 
 ![image](https://user-images.githubusercontent.com/96930989/230721110-310bb4d0-27c6-4e7d-9490-aacbf214c03e.png)
 
-### 5. Access your Nginx proxy manager
+### 4. Access your Nginx proxy manager
 
 Navigate to `<IP of the host>:81` in the browser, you will see the login page below
 
@@ -217,7 +199,7 @@ Once you log in, you can modify the username and password here
 
 Now the Nginx proxy server is running on your machine
 
-### 6. Enable SSL when you access your Nginx proxy manager
+### 5. Enable SSL when you access your Nginx proxy manager
 
 a. Make sure you have a custom domain
 b. Add DNS `A` record in your DNS provider, point `FQDN` to your Nginx proxy server's IP
