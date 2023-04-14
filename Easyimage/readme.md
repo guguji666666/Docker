@@ -1,7 +1,7 @@
 ## Deploy your own Easyimage server to store images/pictures
 
 * [EasyImages 2.0 github](https://github.com/icret/EasyImages2.0)
-* [EasyImage Docker deployment](https://hub.docker.com/r/ddsderek/easyimage)
+* [EasyImage Docker/Docker-compose deployment](https://hub.docker.com/r/ddsderek/easyimage)
 
 
 ## Before we start
