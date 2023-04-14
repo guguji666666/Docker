@@ -3,7 +3,7 @@
 ### [Install Portainer](https://www.portainer.io/install)
 ![image](https://user-images.githubusercontent.com/96930989/230776317-6ce85bfb-43b2-4e5d-9279-656fe1184191.png)
 
-### [Install Portainer Community Edition](https://docs.portainer.io/start/install-ce/server/docker/linux#deployment)
+### [Install Portainer Community Edition with Docker on Linux](https://docs.portainer.io/start/install-ce/server/docker/linux#deployment)
 
 ## Before we start
 
