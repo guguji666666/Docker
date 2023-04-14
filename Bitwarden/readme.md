@@ -1,4 +1,4 @@
-## Deploy your own bitwarden server to store your passwords
+## Deploy your own bitwarden server using Docker
 
 [Download bitwarden](https://bitwarden.com/download/)
 
