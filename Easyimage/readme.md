@@ -168,8 +168,11 @@ Enable API uploading
 
 ## Optional
 
-#### 1. Update Easyimage
-Navigate to the directory of Easyimage
+### Docker-compose
+
+#### 1. Update Easyimage 
+
+Navigate to the path
 ```sh
 cd /root/data/docker_data/easyimage
 ```
@@ -209,4 +212,25 @@ cd ~
 
 ```sh
 rm -rf /root/data/docker_data/easyimage
+```
+
+
+### Docker
+
+#### 1. Update Easyimage
+
+```sh
+docker stop easyimage
+docker rm easyimage
+docker image rm easyimage
+docker run -itd \
+  --name easyimage \
+  -p 8080:80 \
+  -e TZ=Asia/Shanghai \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -v /root/data/docker_data/easyimage/config:/app/web/config \
+  -v /root/data/docker_data/easyimage/i:/app/web/i \
+  ddsderek/easyimage:latest
+```
 ```
