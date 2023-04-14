@@ -205,3 +205,44 @@ The VS code will pop up
 Once you finish editing, save the file and click `stop` here
 
 ![image](https://user-images.githubusercontent.com/96930989/230749974-3a6c1e3c-b23d-46a5-9c62-2863c8c09e02.png)
+
+## Optional
+
+### 1. Update Joplin (Docker-compose)
+
+Backup
+```sh
+cp -r /root/data/docker_data/joplin /root/data/docker_data/joplin.archive
+```
+
+Navigate to the path
+```sh
+cd /root/data/docker_data/joplin
+```
+
+Pull latest image
+```sh
+docker-compose pull
+```
+
+Update and start Joplin
+```sh
+docker-compose up -d
+```
+
+### 2. Remove Joplin (Docker-compose)
+
+Navigate to the path
+```sh
+cd /root/data/docker_data/joplin  # 进入docker-compose所在的文件夹
+```
+
+Stop container
+```sh
+docker-compose down
+```
+
+Remove container as well as local file
+```sh
+rm -rf /root/data/docker_data/joplin
+```
