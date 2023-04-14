@@ -1,4 +1,4 @@
-## Deploy your own Joplin cloud server
+## Deploy your own Joplin cloud server using Docker-compose
 
 * [Download Joplin app](https://joplinapp.org/)
 * [Docker Joplin deployment](https://hub.docker.com/r/joplin/server)
