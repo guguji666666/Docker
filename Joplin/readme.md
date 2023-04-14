@@ -208,7 +208,7 @@ Once you finish editing, save the file and click `stop` here
 
 ## Optional
 
-### 1. Update Joplin (Docker-compose)
+#### 1. Update Joplin (Docker-compose)
 
 Backup
 ```sh
@@ -230,7 +230,7 @@ Update and start Joplin
 docker-compose up -d
 ```
 
-### 2. Remove Joplin (Docker-compose)
+#### 2. Remove Joplin (Docker-compose)
 
 Navigate to the path
 ```sh
