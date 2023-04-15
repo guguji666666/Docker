@@ -79,3 +79,15 @@ Start uptimekuma
 ```sh
 docker-compose up -d
 ```
+
+![image](https://user-images.githubusercontent.com/96930989/232203331-5bebc9c5-5051-4c6e-98de-b38a43b31eb0.png)
+
+
+### 4. Add entry of uptime-kuma in Nginx proxy manager
+
+![image](https://user-images.githubusercontent.com/96930989/232204150-bbe0258d-de31-492c-87ea-306ed46d9d1c.png)
+
+Force SSL
+
+![image](https://user-images.githubusercontent.com/96930989/232204236-ee3305c8-1321-4a30-9512-881378f72f3f.png)
+
