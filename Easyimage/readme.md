@@ -34,6 +34,7 @@ DNS A record > points "image.abc.com" to the IP of Nginx proxy server
 ```sh
 mkdir -p /root/data/docker_data/easyimage
 ```
+
 ```sh
 cd /root/data/docker_data/easyimage
 ```
