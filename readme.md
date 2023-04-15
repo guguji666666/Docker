@@ -26,7 +26,22 @@ apt update -y
 apt install wget curl sudo vim git -y
 ```
 
-### 2. Install Docker and Docker-compose
+### 2. SWAP if required
+
+```sh
+wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh
+```
+
+Input 18
+
+![image](https://user-images.githubusercontent.com/96930989/232177321-3f0ff739-f1b9-46fc-b697-700a73ea3cfb.png)
+
+
+Input the RAM you want to swap, normally it is 2 * orginial RAM
+
+![image](https://user-images.githubusercontent.com/96930989/232177332-0865f65a-2e28-4001-8633-567f4f3ef566.png)
+
+### 3. Install Docker and Docker-compose
 
 Install Docker
 ```sh
