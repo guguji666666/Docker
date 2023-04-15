@@ -1,3 +1,10 @@
+## Deploy your own Joplin cloud server using Docker
+
+[Installing Joplin in Docker](https://github.com/laurent22/joplin/tree/dev/packages/server)
+
+[joplin/server](https://hub.docker.com/r/joplin/server)
+
+
 ## Deploy your own Joplin cloud server using Docker-compose
 
 * [Download Joplin app](https://joplinapp.org/)
@@ -246,3 +253,5 @@ Remove container as well as local file
 ```sh
 rm -rf /root/data/docker_data/joplin
 ```
+
+
