@@ -28,6 +28,10 @@ DNS A record > points "image.abc.com" to the IP of Nginx proxy server
 ### 2. Create directory for uptimekuma
 
 ```sh
+sudo -i
+```
+
+```sh
 mkdir -p /root/data/docker_data/uptimekuma
 ```
 
