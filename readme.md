@@ -39,6 +39,8 @@ Input 18
 
 Input the RAM you want to swap, normally it is 2 * orginial RAM
 
+For example, the original RAM of the linux server is 1G = 1024 MB, then we input 2048 here
+
 ![image](https://user-images.githubusercontent.com/96930989/232177332-0865f65a-2e28-4001-8633-567f4f3ef566.png)
 
 ### 3. Install Docker and Docker-compose
