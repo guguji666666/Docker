@@ -68,3 +68,9 @@ Default username
 ```
 admin
 ```
+
+Once log in, you can modify the username and password here <br>
+![image](https://user-images.githubusercontent.com/96930989/232315575-3ffa0850-fcac-4d2a-85a7-53f887c8f272.png)
+
+### 4. Add entry for alist in Nginx proxy manager
+
