@@ -55,6 +55,5 @@ docker run -d --restart=always -v /mnt/sata1-1/alist:/opt/alist/data -p 5244:524
 ![image](https://user-images.githubusercontent.com/96930989/232314513-ea0f4c78-45c9-4e7b-afeb-c5ce73733c6a.png)
 
 Verify the alist container is running <br>
-![image](https://user-images.githubusercontent.com/96930989/232314641-f6a4c3b4-660c-4a19-9239-247c588dfc6f.png)
-
+![image](https://user-images.githubusercontent.com/96930989/232314641-f6a4c3b4-660c-4a19-9239-247c588dfc6f.png) <br>
 ![image](https://user-images.githubusercontent.com/96930989/232314683-8269e2e6-7d6d-44b5-aeac-0ffeeafe07c5.png)
