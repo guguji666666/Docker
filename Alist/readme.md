@@ -79,4 +79,17 @@ Once log in, you can modify the username and password here <br>
 Force SSL <br>
 ![image](https://user-images.githubusercontent.com/96930989/232316017-61cb1f2e-9d03-4228-aee4-fa2491dbb047.png)
 
-
+In advance, paste the context here
+```yml
+location / {
+    proxy_pass http://127.0.0.1:5244/;
+    rewrite ^/(.*)$ /$1 break;
+    proxy_redirect off;
+    proxy_set_header Host $host;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header Upgrade-Insecure-Requests 1;
+    proxy_set_header X-Forwarded-Proto https;
+}
+```
