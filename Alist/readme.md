@@ -32,6 +32,13 @@ DNS A record > points "image.abc.com" to the IP of Nginx proxy server
 
 ### 3. Install Alist (stable version)
 
+Replace `/etc/alist` with your own local path for alist folder
 ```sh
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
+
+For example
+```sh
+docker run -d --restart=always -v /mnt/sata1-1/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
+```
+
