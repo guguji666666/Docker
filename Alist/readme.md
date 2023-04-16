@@ -93,3 +93,14 @@ location / {
     proxy_set_header X-Forwarded-Proto https;
 }
 ```
+
+If you are using frpc, then we need to make sure the congiuration between these two parts are the same <br>
+![image](https://user-images.githubusercontent.com/96930989/232318750-23525618-87e4-4abe-acb8-8989e19a33e2.png) <br>
+![image](https://user-images.githubusercontent.com/96930989/232318802-1316957b-0914-4c81-8097-7653f13c158a.png) <br>
+
+
+
+
+
+
+Force SSL <br>
