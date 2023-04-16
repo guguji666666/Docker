@@ -72,5 +72,11 @@ admin
 Once log in, you can modify the username and password here <br>
 ![image](https://user-images.githubusercontent.com/96930989/232315575-3ffa0850-fcac-4d2a-85a7-53f887c8f272.png)
 
-### 4. Add entry for alist in Nginx proxy manager
+### 4. Add entry for Alist in Nginx proxy manager
+
+![image](https://user-images.githubusercontent.com/96930989/232315903-8c8a19b4-6717-47a4-8041-399288712764.png)
+
+Force SSL <br>
+![image](https://user-images.githubusercontent.com/96930989/232316017-61cb1f2e-9d03-4228-aee4-fa2491dbb047.png)
+
 
