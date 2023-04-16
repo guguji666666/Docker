@@ -50,4 +50,6 @@ cd /mnt/sata1-1/alist
 ```sh
 docker run -d --restart=always -v /mnt/sata1-1/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
+![image](https://user-images.githubusercontent.com/96930989/232314480-49154fee-6ad9-4809-b3b1-49f611274765.png)
 
+![image](https://user-images.githubusercontent.com/96930989/232314513-ea0f4c78-45c9-4e7b-afeb-c5ce73733c6a.png)
