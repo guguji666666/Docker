@@ -1,5 +1,8 @@
 ## Deploy your Alist server
 
+[Alist official installation guidance (with docker)](https://alist-doc.nn.ci/en/docs/install/docker)
+[Alist github](https://github.com/alist-org/alist)
+
 ## Before we start
 
 1. Make sure you have a custom domain, for example `abc.com`
