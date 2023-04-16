@@ -29,3 +29,9 @@ DNS A record > points "image.abc.com" to the IP of Nginx proxy server
 ### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
 
 ### 2. Create directory for Alist
+
+### 3. Install Alist (stable version)
+
+```sh
+docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
+```
