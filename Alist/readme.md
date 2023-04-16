@@ -32,12 +32,21 @@ DNS A record > points "image.abc.com" to the IP of Nginx proxy server
 
 ### 3. Install Alist (stable version)
 
+Check if port 5244 is used by other existing apps/services
+```sh
+apt install lsof
+lsof -i:5244
+```
+
 Replace `/etc/alist` with your own local path for alist folder
 ```sh
 docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
 
-For example
+For example, i used customed path here
+```sh
+cd /mnt/sata1-1/alist
+```
 ```sh
 docker run -d --restart=always -v /mnt/sata1-1/alist:/opt/alist/data -p 5244:5244 --name="alist" xhofe/alist:latest
 ```
