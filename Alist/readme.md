@@ -63,3 +63,8 @@ Running the command below to get the default password
 docker logs alist
 ```
 ![image](https://user-images.githubusercontent.com/96930989/232314953-4682ac2b-edfe-46e7-bb3a-4eb3c5e696a6.png)
+
+Default username
+```
+admin
+```
