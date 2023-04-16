@@ -11,8 +11,8 @@
 ```
 For example,
 You bought Domain "abc.com" from DNS provider.
-Then you create FQDN "image.abc.com" for your Joplin cloud server
-DNS A record > points "image.abc.com" to the IP of Nginx proxy server
+Then you create FQDN "alist.abc.com" for your alist server
+DNS A record > points "alist.abc.com" to the IP of Nginx proxy server
 ```
 3. How to get your custom domain
 * [Get custom domain from Aliyun](https://wanwang.aliyun.com/domain/)
