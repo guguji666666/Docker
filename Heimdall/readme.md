@@ -15,16 +15,12 @@ cd ~
 ```
 
 ```sh
-cd docker
-```
-
-```sh
-mkdir heimdall
+mkdir -p /root/data/docker_data/heimdall
 ```
 
 Then navigate to the new directory
 ```sh
-cd heimdall
+cd /root/data/docker_data/heimdall
 ```
 
 Then we need to create a file called "docker-compose.yml"
@@ -77,14 +73,13 @@ services:
       - PGID=0
       - TZ=China/Shanghai
     volumes:
-      - /gjsheimdall/config:/config
+      - /root/data/docker_data/heimdall/config:/config
     ports:
       - 8280:80
     restart: unless-stopped
     
 ```
 
-![image](https://user-images.githubusercontent.com/96930989/227771048-6e7f109e-4354-4250-bacb-6fca7b03f957.png)
 
 Once these steps are done, save the file with `CTRL + O`, then Enter to confirm, and exit the nano editor with `CTRL + X`
 ```sh
