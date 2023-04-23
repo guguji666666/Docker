@@ -118,3 +118,8 @@ It takes some time to download the image, and start the container. Remember to a
 ![image](https://user-images.githubusercontent.com/96930989/227764638-202e5941-738d-454b-968c-882b734756e5.png)
 
 When you see "done" in the terminal, the hemdall is started.
+
+## Access Heimdall
+
+### 1. In the browser, input <Ip of the Nginx proxy server>:<8280>
+  
