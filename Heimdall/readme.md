@@ -70,6 +70,7 @@ services:
       - /home/<your-user>/heimdall/config:/config
     ports:
       - 8080:80
+      - 8181:443
     restart: unless-stopped
 ```
 
@@ -103,8 +104,8 @@ services:
       - /root/data/docker_data/heimdall/config:/config
     ports:
       - 8280:80
-    restart: unless-stopped
-    
+      - 8281:443
+    restart: unless-stopped    
 ```
 
 
