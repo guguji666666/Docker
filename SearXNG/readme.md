@@ -131,8 +131,7 @@ cd /root/data/docker_data/searxng/searxng-docker
 ```sh
 vim .env
 ```
-Uncomment and input the domain here
-![image](https://user-images.githubusercontent.com/96930989/234149151-48d115c1-49f5-4534-9fbf-272284a3c2d1.png)
-
+Uncomment and input the domain here <br>
+![image](https://user-images.githubusercontent.com/96930989/234164490-413262e0-2d82-4be5-958d-a536ac1f6c1a.png)
 
 ```sh
