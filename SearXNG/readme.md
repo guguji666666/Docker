@@ -42,7 +42,7 @@ cd /root/data/docker_data/searxng
 git clone https://github.com/searxng/searxng-docker.git
 ```
 
-### 3. Create yaml file and start the container
+### 3. Modify yaml file
 
 ```sh
 cd /root/data/docker_data/searxng/searxng-docker
@@ -122,3 +122,17 @@ networks:
         #caddy-data:
         #caddy-config:
 
+### 4. Modify `.env` file
+
+```sh
+cd /root/data/docker_data/searxng/searxng-docker
+```
+
+```sh
+vim .env
+```
+Uncomment and input the domain here
+![image](https://user-images.githubusercontent.com/96930989/234149151-48d115c1-49f5-4534-9fbf-272284a3c2d1.png)
+
+
+```sh
