@@ -25,12 +25,11 @@ DNS A record > points "search.abc.com" to the IP of Nginx proxy server
 
 ### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
 
-### 2. 
+### 2. Create directory for searxng
 ```sh
 sudo -i
 ```
 
-Create directory for searxng
 ```sh
 mkdir -p /root/data/docker_data/searxng
 ```
@@ -42,6 +41,8 @@ cd /root/data/docker_data/searxng
 ```sh
 git clone https://github.com/searxng/searxng-docker.git
 ```
+
+### 3. Create yaml file and start the container
 
 ```sh
 cd searxng-docker/
