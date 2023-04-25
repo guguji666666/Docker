@@ -149,7 +149,15 @@ docker-compose down
 sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
 ```
 
+Start the container
 ```sh
 docker-compose up -d
 ```
+
+### 5. Configure entry in Nginx proxy manager
+
+![image](https://user-images.githubusercontent.com/96930989/234166594-55547dac-2a95-4871-8faf-116636bf5ae9.png)
+
+Force SSL <br>
+![image](https://user-images.githubusercontent.com/96930989/234166740-95751934-74b5-4077-8480-6400372ceb3d.png)
 
