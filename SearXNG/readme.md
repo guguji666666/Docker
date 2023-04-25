@@ -146,7 +146,7 @@ docker-compose down
 ```
 
 ```sh
-sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml # 生成一个密钥
+sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
 ```
 
 
