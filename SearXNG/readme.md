@@ -121,6 +121,7 @@ networks:
         #volumes:
         #caddy-data:
         #caddy-config:
+```
 
 ### 4. Modify `.env` file
 
@@ -131,7 +132,21 @@ cd /root/data/docker_data/searxng/searxng-docker
 ```sh
 vim .env
 ```
-Uncomment and input the domain here <br>
+Uncomment and input the domain here <br>, save the file
 ![image](https://user-images.githubusercontent.com/96930989/234164490-413262e0-2d82-4be5-958d-a536ac1f6c1a.png)
 
+Start the container
 ```sh
+docker-compose up -d
+```
+
+Create key pair
+```sh
+docker-compose down
+```
+
+```sh
+sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml # 生成一个密钥
+```
+
+
