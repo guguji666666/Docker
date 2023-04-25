@@ -149,4 +149,7 @@ docker-compose down
 sed -i "s|ultrasecretkey|$(openssl rand -hex 32)|g" searxng/settings.yml
 ```
 
+```sh
+docker-compose up -d
+```
 
