@@ -106,7 +106,9 @@ Now you can sign in your bitwarden server
 ### 5. Disable new account registration if the server is only used by yourself
 
 ```sh
-sudo su root
+sudo -i
+```
+```sh
 cd ~
 ```
 
