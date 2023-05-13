@@ -153,10 +153,10 @@ Verify if the setting takes affect, we tried to register a new account and got t
 ### 6. (Optional) remove bitwarden
 
 ```sh
-docker stop bitwardenrs
+docker stop bitwarden
 ```
 ```sh
-docker rm -f bitwardenrs
+docker rm -f bitwarden
 ```
 ```sh
 rm -rf <full path of your bitwarden folder>
