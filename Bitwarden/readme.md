@@ -135,6 +135,7 @@ Sample
 ```sh
 docker run -d --name bitwarden \
   --restart unless-stopped \
+  -e SIGNUPS_ALLOWED=false \
   -e WEBSOCKET_ENABLED=true \
   -v /root/data/docker_data/bitwarden/files/:/data/ \
   -p 7474:80 \
