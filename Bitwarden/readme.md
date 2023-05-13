@@ -101,7 +101,6 @@ docker stop bitwardenrs
 ```sh
 docker rm -f bitwardenrs
 ```
-![image](https://user-images.githubusercontent.com/96930989/230753186-1f41f431-eba6-41b9-b341-5b9fd67c5b50.png)
 
 Replace `demo` with your customized name, for example `gg`
 ```sh
@@ -114,7 +113,6 @@ docker run -d --name bitwardenrs \
   -p 3012:3012 \
   vaultwarden/server:latest
 ```
-
 Check the bitwarden is back
 ```sh
 docker ps
@@ -124,3 +122,19 @@ docker ps
 Verify if the setting takes affect, we tried to register a new account and got the error
 
 ![image](https://user-images.githubusercontent.com/96930989/230753294-61a52d3e-1cab-4924-a1b1-1b9e9f71a360.png)
+
+### 6. (Optional) remove bitwarden
+
+```sh
+docker stop bitwardenrs
+```
+```sh
+docker rm -f bitwardenrs
+```
+```sh
+rm -rf <full path of your bitwarden folder>
+```
+Sample
+```sh
+rm -rf /mnt/sata1-1/bitwarden
+```
