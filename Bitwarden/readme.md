@@ -27,15 +27,20 @@ DNS A record > points "bitwarden.abc.com" to the IP of VM that runs Nginx proxy 
 
 ### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
 
-### 2. Install bitwarden image
+### 2. Install bitwarden image and start container
 ```sh
-sudo su root
+sudo -i
+```
+```sh
 cd ~
 ```
-
-Replace `demo` with your customized name, for example `gg`
 ```sh
-docker run -d --name bitwardenrs \
+mkdir -p /root/data/docker_data/bitwarden
+```
+
+Replace `/www/wwwroot/demo/` with your customized path, for example `/root/data/docker_data/bitwarden/files`
+```sh
+docker run -d --name bitwarden \
   --restart unless-stopped \
   -e WEBSOCKET_ENABLED=true \
   -v /www/wwwroot/demo/:/data/ \
@@ -43,7 +48,17 @@ docker run -d --name bitwardenrs \
   -p 3012:3012 \
   vaultwarden/server:latest
 ```
-![image](https://user-images.githubusercontent.com/96930989/230751321-cb963a56-0e3a-45ad-b714-b4b56af1a744.png)
+
+Sample
+```sh
+docker run -d --name bitwarden \
+  --restart unless-stopped \
+  -e WEBSOCKET_ENABLED=true \
+  -v /root/data/docker_data/bitwarden/files/:/data/ \
+  -p 7474:80 \
+  -p 3012:3012 \
+  vaultwarden/server:latest
+```
 
 ### 3. Create entry for bitwarden in Nginx proxy server
 
@@ -87,6 +102,7 @@ Now you can sign in your bitwarden server
 
 ![image](https://user-images.githubusercontent.com/96930989/230751955-c06763a5-f2e4-43f8-a738-b3b6f661e1b2.png)
 
+
 ### 5. Disable new account registration if the server is only used by yourself
 
 ```sh
@@ -96,23 +112,34 @@ cd ~
 
 Stop bitwarden and clear its container
 ```sh
-docker stop bitwardenrs
-```
-```sh
-docker rm -f bitwardenrs
+docker stop bitwarden
 ```
 
-Replace `demo` with your customized name, for example `gg`
 ```sh
-docker run -d --name bitwardenrs \
+docker rm -f bitwarden
+```
+
+Replace `/www/wwwroot/demo/` with your customized path, for example `/root/data/docker_data/bitwarden/files`
+```sh
+docker run -d --name bitwarden \
   --restart unless-stopped \
-  -e SIGNUPS_ALLOWED=false \
   -e WEBSOCKET_ENABLED=true \
   -v /www/wwwroot/demo/:/data/ \
   -p 7474:80 \
   -p 3012:3012 \
   vaultwarden/server:latest
 ```
+Sample
+```sh
+docker run -d --name bitwarden \
+  --restart unless-stopped \
+  -e WEBSOCKET_ENABLED=true \
+  -v /root/data/docker_data/bitwarden/files/:/data/ \
+  -p 7474:80 \
+  -p 3012:3012 \
+  vaultwarden/server:latest
+```
+
 Check the bitwarden is back
 ```sh
 docker ps
@@ -134,7 +161,8 @@ docker rm -f bitwardenrs
 ```sh
 rm -rf <full path of your bitwarden folder>
 ```
+
 Sample
 ```sh
-rm -rf /mnt/sata1-1/bitwarden
+rm -rf /root/data/docker_data/bitwarden
 ```
