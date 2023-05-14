@@ -246,3 +246,14 @@ e. Once the entry is created, edit it
 f. Force SSL
 
 ![image](https://user-images.githubusercontent.com/96930989/231041571-e31df3aa-20b9-4d8f-9d94-99d2141a07fa.png)
+
+### Optional
+List docker images
+```sh
+docker image list
+```
+
+Clear unused docker image
+```sh
+docker image prune
+```
