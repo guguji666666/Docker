@@ -1,4 +1,4 @@
-## Install Docker Docker-compose and Nginx proxy manager on Ubuntu 22.04 LTS
+## Install Docker Docker-compose and Nginx proxy manager on debian 11
 
 * [Install Docker](https://docs.docker.com/get-docker/)
 * [Install Docker Compose](https://docs.docker.com/compose/install/)
