@@ -6,8 +6,8 @@
 
 For example, <br>
 You bought Domain "abc.com" from DNS provider. <br>
-Then you create FQDN "serverstatus.abc.com" for your Nginx proxy server <br>
-DNS A record > points "serverstatus.abc.com" to the IP of VM that runs Nginx proxy server
+Then you create FQDN "halo.abc.com" for your Nginx proxy server <br>
+DNS A record > points "halo.abc.com" to the IP of VM that runs Nginx proxy server
 
 3. How to get your custom domain
 * [Get custom domain from Aliyun](https://wanwang.aliyun.com/domain/)
@@ -30,7 +30,7 @@ mkdir -p /root/data/docker_data/halo2
 ```
 
 Pull docker image and create container <br>
-(replace`~/.halo2`with your own path, replace`admin` and `P@88w0rd` with your username and password)
+(replace`~/.halo2`with your own path, replace`admin` and `P@88w0rd` with your username and password, replace`http://localhost:8090/` with your own FQDN)
 ```sh
 docker run \
   -it -d \
@@ -41,4 +41,6 @@ docker run \
   --halo.external-url=http://localhost:8090/ \
   --halo.security.initializer.superadminusername=admin \
   --halo.security.initializer.superadminpassword=P@88w0rd
-  ```
+```
+  
+  
