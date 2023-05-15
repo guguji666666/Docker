@@ -22,6 +22,7 @@ DNS A record > points "halo.abc.com" to the IP of VM that runs Nginx proxy serve
 Create directory for halo2
 ```sh
 sudo -i
+```
 ```sh
 cd ~
 ```
