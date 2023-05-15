@@ -29,7 +29,8 @@ cd ~
 mkdir -p /root/data/docker_data/halo2
 ```
 
-Retrive docker image and create container (replace`~/.halo2`with your own path, replace`admin` and `P@88w0rd` with your username and password)
+Pull docker image and create container <br>
+(replace`~/.halo2`with your own path, replace`admin` and `P@88w0rd` with your username and password)
 ```sh
 docker run \
   -it -d \
