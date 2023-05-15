@@ -18,4 +18,26 @@ DNS A record > points "serverstatus.abc.com" to the IP of VM that runs Nginx pro
 ## Start deployment
 ### 1. [Install Docker, Docker-compose and Nginx proxy server](https://github.com/guguji666666/Docker)
 ### 2. Refer to [Deploy Halo2 using Docker](https://docs.halo.run/getting-started/install/docker/)
-### 3.
+
+Create directory for halo2
+```sh
+sudo -i
+```sh
+cd ~
+```
+```sh
+mkdir -p /root/data/docker_data/halo2
+```
+
+Retrive docker image and create container (replace`~/.halo2`with your own path, replace`admin` and `P@88w0rd` with your username and password)
+```sh
+docker run \
+  -it -d \
+  --name halo \
+  -p 8090:8090 \
+  -v ~/.halo2:/root/.halo2 \
+  halohub/halo:2.5 \
+  --halo.external-url=http://localhost:8090/ \
+  --halo.security.initializer.superadminusername=admin \
+  --halo.security.initializer.superadminpassword=P@88w0rd
+  ```
