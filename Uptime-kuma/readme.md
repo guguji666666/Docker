@@ -1,4 +1,4 @@
-## Deploy uptimekuma with Docker-compose to monitor your websites
+## Deploy uptime-kuma with Docker-compose to monitor your websites
 
 ## Before we start
 
