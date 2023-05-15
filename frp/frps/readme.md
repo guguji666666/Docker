@@ -100,7 +100,7 @@ docker-compose down
 ```
 Backup current container volume
 ```sh
-cp -r /root/data/docker_data/fprs /root/data/docker_data/frps.archive  # 其实就是备份一下frps.ini这个文件
+cp -r /root/data/docker_data/fprs /root/data/docker_data/frps.archive
 ```
 Get latest docker image
 ```sh
@@ -112,7 +112,7 @@ docker-compose up -d
 ```
 Remove unused docker image
 ```sh
-docker image prune  # prune 命令用来删除不再使用的 docker 对象。删除所有未被 tag 标记和未被容器使用的镜像
+docker image prune
 ```
 
 ### Optional (uninstall frps)
@@ -122,9 +122,9 @@ docker stop frps
 ```
 Remove frps container
 ```sh
-docker rm -f frps  # 停止容器，此时不会删除映射到本地的数据
+docker rm -f frps
 ```
 Remove frps volume completely
 ```sh
-rm -rf /root/data/docker_data/frps  # 完全删除映射到本地的数据
+rm -rf /root/data/docker_data/frps
 ```
