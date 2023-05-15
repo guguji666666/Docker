@@ -56,4 +56,14 @@ docker run \
   --halo.security.initializer.superadminusername=admin \
   --halo.security.initializer.superadminpassword=testP@88w0rd
 ```
-  
+
+(Optional) If you are using docker in Ugreen, then <br>
+![image](https://github.com/guguji666666/Docker/assets/96930989/ad476737-4749-4c28-84a8-9ab5fcd99004) <br>
+![image](https://github.com/guguji666666/Docker/assets/96930989/1f6bb247-331c-4e5c-9e87-af17630f0ee2) <br>
+![image](https://github.com/guguji666666/Docker/assets/96930989/6755e598-1de6-4f93-9dd7-a0bcea8e6cd5) <br>
+![image](https://github.com/guguji666666/Docker/assets/96930989/6205b1ed-6342-4c02-a788-42bad5fd0ba2) <br>
+
+
+
+
+
