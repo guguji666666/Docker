@@ -42,5 +42,17 @@ docker run \
   --halo.security.initializer.superadminusername=admin \
   --halo.security.initializer.superadminpassword=P@88w0rd
 ```
-  
+
+Sample 
+```sh
+docker run \
+  -it -d \
+  --name halo \
+  -p 8090:8090 \
+  -v /root/data/docker_data/halo2:/root/.halo2 \
+  halohub/halo:2.5 \
+  --halo.external-url=http://halo.abc.com/ \
+  --halo.security.initializer.superadminusername=admin \
+  --halo.security.initializer.superadminpassword=testP@88w0rd
+```
   
