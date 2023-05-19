@@ -39,7 +39,9 @@ DNS A record > points "Joplin.abc.com" to the IP of VM that runs Nginx proxy ser
 ### 2. Create directory for Joplin
 
 ```sh
-sudo su root
+sudo -i
+```
+```sh
 mkdir -p /root/data/docker_data/joplin
 ```
 
