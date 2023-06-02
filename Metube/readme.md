@@ -16,4 +16,13 @@ On the left, define the local port on your NAS, the port should be free for the 
 On the right, define the port `8081` , don't change this port!!!! <br>
 ![image](https://github.com/guguji666666/Docker/assets/96930989/3efdb460-d78b-4304-a28b-bee2ead23ec4)
 
-### 4. Once configured, run the container, then access Metube via `<Internal ip>:<The port you defined>`.
+### 4. Once configured, run the container, then access Metube via `<Internal ip>:<The port you defined>`
+
+# 2. Deploy using Docker commands in NAS
+```sh
+docker run -d -p 8081:8081 -v /path/to/downloads:/downloads ghcr.io/alexta69/metube
+```
+For port 8081 on the left, you can customize it using the local port on your NAS, the port should be free for the moment <br>
+For path `/path/to/downloads`, you can customize it using the local path in your NAS, this is the path where you save the videos <br>
+
+Once configured, run the container, then access Metube via `<Internal ip>:<The port you defined>`
