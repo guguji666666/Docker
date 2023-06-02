@@ -10,3 +10,10 @@ On the left, define the local path in your NAS, this is the path where you save 
 On the right, define the path in container `/downloads` , don't change this path !!!! <br>
 For the permissions, define read and write <br>
 ![image](https://github.com/guguji666666/Docker/assets/96930989/7fca66cc-c974-4304-a9ff-7bb6e307903f)
+
+### 3. Define the port used
+On the left, define the local port on your NAS, the port should be free for the moment <br>
+On the right, define the port `8081` , don't change this port!!!! <br>
+![image](https://github.com/guguji666666/Docker/assets/96930989/3efdb460-d78b-4304-a28b-bee2ead23ec4)
+
+### 4. Once configured, run the container, then access your Metube via `<Internal ip>:<The port you defined>`.
