@@ -16,4 +16,4 @@ On the left, define the local port on your NAS, the port should be free for the 
 On the right, define the port `8081` , don't change this port!!!! <br>
 ![image](https://github.com/guguji666666/Docker/assets/96930989/3efdb460-d78b-4304-a28b-bee2ead23ec4)
 
-### 4. Once configured, run the container, then access your Metube via `<Internal ip>:<The port you defined>`.
+### 4. Once configured, run the container, then access Metube via `<Internal ip>:<The port you defined>`.
