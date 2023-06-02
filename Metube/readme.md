@@ -8,7 +8,7 @@ Sample in Ugreen NAS <br>
 ### 2. Define the local path and path in container
 On the left, define the local path in your NAS, this is the path where you save the videos <br>
 On the right, define the path in container `/downloads` , don't change this path !!!! <br>
-For the permissions, define read and write <br>
+For the permissions, set read and write <br>
 ![image](https://github.com/guguji666666/Docker/assets/96930989/7fca66cc-c974-4304-a9ff-7bb6e307903f)
 
 ### 3. Define the port used
