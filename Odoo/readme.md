@@ -2,37 +2,26 @@
 
 ### Docker compose yaml file
 ```yml
-version: “3.1”
-
+version: '3'
 services:
-db:
-     image: postgres:latest
-     restart: always
-     ports:
-       - 5444:5432
-    environment:
-        POSTGRES_USER: odoo
-        POSTGRES_PASSWORD: odoo
-   volumes:
-       - pg-odoo: /var/lib/postgresql/data
- 
-odoo:
+  odoo:
     image: odoo:latest
+    env_file: .env
+    depends_on:
+      - postgres
     ports:
-        - 8069:8069
-    environment: 
-           -  HOST=db
-           -  PORT=5432
-           -  USER=odoo
-           -  PASSWORD=odoo
-  volumes:
-       - ./extra-addons:/mnt/extra-addons
-       - data:/var/lib/odoo
-  depends_on:
-          - db
+      - 8069:8069
+    volumes:
+      - ./data:/var/lib/odoo
+  postgres:
+    image: postgres:13
+    env_file: .env
+    volumes:
+      - ./db:/var/lib/postgresql/data/pgdata
+
 volumes:
-    pg-odoo:
-    data:
+  data:
+  db:
 ```
 
 ```sh
