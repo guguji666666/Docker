@@ -34,3 +34,7 @@ volumes:
     pg-odoo:
     data:
 ```
+
+```sh
+docker-compose up -d
+```
