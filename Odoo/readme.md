@@ -1,28 +1,29 @@
 # Odoo 
 
+[odoo docker image](https://hub.docker.com/_/odoo/)
+
 ### Docker compose yaml file
 ```yml
-version: '3'
+version: '3.1'
 services:
-  odoo:
+  web:
     image: odoo:latest
-    env_file: .env
     depends_on:
-      - postgres
+      - mydb
     ports:
-      - 8069:8069
-    volumes:
-      - ./data:/var/lib/odoo
-  postgres:
-    image: postgres:13
-    env_file: .env
-    volumes:
-      - ./db:/var/lib/postgresql/data/pgdata
-
-volumes:
-  data:
-  db:
+      - "8069:8069"
+    environment:
+    - HOST=mydb
+    - USER=odooguguji
+    - PASSWORD=myodooGucaoji!!!
+  mydb:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodooGucaoji!!!
+      - POSTGRES_USER=odooguguji
 ```
+
 
 ```sh
 docker-compose up -d
