@@ -14,14 +14,14 @@ services:
       - "8069:8069"
     environment:
     - HOST=mydb
-    - USER=odooguguji
-    - PASSWORD=myodooGucaoji!!!
+    - USER=odoo
+    - PASSWORD=myodoo
   mydb:
     image: postgres:15
     environment:
       - POSTGRES_DB=postgres
-      - POSTGRES_PASSWORD=myodooGucaoji!!!
-      - POSTGRES_USER=odooguguji
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
 ```
 
 
